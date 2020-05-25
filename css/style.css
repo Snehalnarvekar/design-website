@@ -148,6 +148,7 @@ h5.text_content{
 	border-radius: 0;
 	border: none;
 	margin-bottom: 30px;
+	max-width: 300px;
 }
 .card .card_image img{
 	max-width: 300px;
@@ -167,7 +168,7 @@ h5.text_content{
 } 
 .card_text img {	
 	width: 24px;
-	margin-left: 25px;
+	margin-left: 2px;
 } 	
 .springwrapper .row.spring-content{
 	padding: 120px 0 0 0;
@@ -376,7 +377,10 @@ h3{
 	height: 64px;
 	margin-right: 20px;
 }
-.cart_wrapper ul li{ 
+.cart_wrapper ul li {
+	display: flex;
+}
+.cart_wrapper ul li p{ 
 	list-style: none;
 	position: relative;
 	color:#FFFFFF;
@@ -385,10 +389,11 @@ h3{
 	font-weight: 400;
 	line-height: 20px;
 	text-align: left;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
-.cart_wrapper .white-cart ul li{ 
+.cart_wrapper .white-cart ul li p{ 
 	color:#3B5266;
+	margin-bottom: 22px;
 }
 p{
 	font-family: 'Lato',sans-serif;
@@ -417,14 +422,13 @@ p{
 	padding: 70px 98px;
 }
 .cart_wrapper .box .white-cart{
-	padding: 40px 50px;
+	padding: 40px 30px;
 }
 .cart_wrapper .box{
     margin-bottom: 30px;
     background: #FFFFFF;
 	text-align: center;
 	max-width: 40%;
-	width: 100%;
 	position: relative;
 	overflow: hidden;
 }
@@ -444,6 +448,9 @@ p{
 }
 .cart_wrapper ul i{
 	color: #4D8AF0;
+	font-size: 15px;
+	padding-right: 10px;
+	line-height: 20px;
 }	
 .cart_wrapper h5{
 	color: #593A30;
@@ -455,6 +462,8 @@ p{
 }
 .cart_wrapper ul.col{
 	column-count: 2;
+	column-gap: 1px;
+	padding: 0;
 }
 .cart_wrapper h2 {
 	color: #FFFFFF;
@@ -485,7 +494,7 @@ p{
 	color: #FFFFFF;
 }
 .cart_wrapper .btn2-wrap{
-	margin: 18px -40px -40px -40px;
+	margin: 0;
     padding: 25px 15px;
 	text-align: center;
 	border-top: 1px solid #E2EAF1;
@@ -846,6 +855,9 @@ footer .footer_image img{
 		height: 34px;
 		margin-right: 10px;
 	}
+	.cart_wrapper .white-cart ul li p{ 
+		margin-bottom: 10px;
+	}
 	.cart_wrapper .box{
 		max-width: 100%;
 		margin: 0 16px 25px;
@@ -865,7 +877,7 @@ footer .footer_image img{
 		line-height: 26px;
 		margin-bottom: 15px;
 	}
-	.cart_wrapper ul li {
+	.cart_wrapper ul li p{
 		font-size: 14px;
 		line-height: 20px;
 		margin-bottom: 10px;
@@ -1150,6 +1162,10 @@ footer .footer_image img{
 		padding-bottom: 30px;
 		margin-bottom: 0;
 	}
+	.cart_wrapper .box {
+		margin-bottom: 30px;
+		max-width: 44%;
+	}
 	.cart_wrapper .btn2-wrap {
 		margin: 0;
 		padding: 25px 10px;
@@ -1159,9 +1175,14 @@ footer .footer_image img{
 		line-height: 48px;
 		margin-bottom: 18px;
 	}
-	.cart_wrapper ul li {
+	.cart_wrapper ul li p{
 		font-size: 14px;
 		line-height: 20px;
+		padding-bottom: 10px;
+		margin-bottom: 15px;
+	}
+	.cart_wrapper .white-cart ul li p {
+		margin-bottom: 15px;
 	}
 	.cart_wrapper h2 sup {
 		top: -20px;
@@ -1298,12 +1319,13 @@ footer .footer_image img{
 	.form_wrapper .newsetter-box form input[type="submit"] {
 		font-size: 16px;
 		line-height: 24px;
-}
-@media (max-width: 440px){
-.testimonial-item  {
-    flex-direction: column;
+	}
 }
 
+@media (max-width: 440px){
+	.testimonial-item  {
+		flex-direction: column;
+	}
 }
 @media(min-width: 1024px){
 	.card_wrapper .card{
@@ -1314,7 +1336,6 @@ footer .footer_image img{
     	margin-left: 15px;
 	}	 
 }
-
 @media(min-width: 768px) and (max-width: 900px){
 	.card_wrapper{
 		margin-left: -60px;
@@ -1326,5 +1347,20 @@ footer .footer_image img{
 		margin-left: 0;
 		padding-right: 40px;
 	}
-
+	.cart_wrapper .featured .cart-box {
+		padding: 60px 40px;
+	}
+	.cart_wrapper .box {
+		margin-bottom: 30px;
+		max-width: 44%;
+	}
+	.cart_wrapper .box .white-cart {
+		padding: 20px 20px;
+	}
 }	
+@media (max-width: 1024px){
+	.card_wrapper .card {
+		max-width: 300px;
+	}
+}
+
