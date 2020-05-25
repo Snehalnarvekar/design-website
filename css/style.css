@@ -655,7 +655,7 @@ footer .copyright p{
 	font-size: 15px;
   	line-height: 20px;
     float: left;
-	color: #47536e;
+	color: #64686D;
 	margin: 0;
 }
 footer .footer_image img{
@@ -687,7 +687,6 @@ footer .footer_image img{
 		max-width: 160px;
 	}
 	#collapsibleNavbar {
-		position: absolute;
 		background: #FFFFFF;
 		padding: 20px 10px;
 		width:100% ;
@@ -873,6 +872,7 @@ footer .footer_image img{
 	}
 	.cart_wrapper ul.col {
 		column-count: 1;
+		padding: 0;
 	}
 	.cart_wrapper .btn2-wrap {
 		margin: 0;
@@ -978,16 +978,23 @@ footer .footer_image img{
 		float: unset;
 		justify-content: center;
 	}
-	.footer .copyright.col-md-6 {
+	 .copyright.col-md-6 {
 		justify-content: center;
-	}
+	 }
 	footer .footer_image img {
 		float: unset;
 		text-align: center;
+		max-width: 30px;
 	}
 	.footer_image.col-md-6 {
 		margin-top: 10px;
 		text-align: center;
+	}
+	footer .copyright p {
+		font-size: 14px;
+		line-height: 20px;
+		text-align: center;
+		float: unset;
 	}
 	.testimonial-item {
 		padding-top: 25px;
@@ -1078,7 +1085,7 @@ footer .footer_image img{
 		padding-top: 40px;	
 	}
 	h4.title_wrapper {
-		text-align: left;
+		text-align: center;
 		font-size: 30px;
 		line-height: 36px;
 	}
@@ -1280,6 +1287,17 @@ footer .footer_image img{
 		height: 40px;
 		margin-right: 15px;
 	}
+	.form_wrapper h3{
+		font-size: 34px;
+		 line-height: 40px;
+	}
+	.form_wrapper p.description{
+		font-size: 16px;
+		line-height: 23px;
+	}
+	.form_wrapper .newsetter-box form input[type="submit"] {
+		font-size: 16px;
+		line-height: 24px;
 }
 @media (max-width: 440px){
 .testimonial-item  {
@@ -1288,13 +1306,25 @@ footer .footer_image img{
 
 }
 @media(min-width: 1024px){
-.card_wrapper .card{
-	max-width: 300px;
+	.card_wrapper .card{
+		max-width: 300px;
+	}
+	.card_text img {
+		width: 24px;
+    	margin-left: 15px;
+	}	 
 }
-.card_text img {
-    width: 24px;
-    margin-left: 15px;
-} 
 
-}
+@media(min-width: 768px) and (max-width: 900px){
+	.card_wrapper{
+		margin-left: -60px;
+		padding: 0;
+		width: 120%;
+	} 
+	.springwrapper .text_box {
+		padding-top: 45px;
+		margin-left: 0;
+		padding-right: 40px;
+	}
 
+}	
