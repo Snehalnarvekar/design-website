@@ -65,14 +65,6 @@ nav.navbar .navbar-nav .nav-link {
     margin-top: 0px;
     text-decoration: none;
 }
-/* .collapsebutton{
-    float: right;
-	background-image: url(../images/icons8-menu.svg);
-	background-position: right;
-	background-size: cover;
-	height: 35px;
-    width: 35px;
-} */
 .text_button a{
     border-radius: 20px;
 	font-family: 'Lato', sans-serif;
@@ -362,9 +354,10 @@ p.testimonial-content{
 	padding: 100px 0;
 }
 .cart_wrapper h3.cart_title{
-	margin-bottom: 34px;
+	margin-bottom: 35px;
 	width:946px;
-	float: left;
+	text-align: left;
+	left: -4%;
 }
 .cart_wrapper img.cart-icon {
 	width: 64px;
@@ -413,16 +406,16 @@ p{
 	padding:0 auto;
 }
 .cart_wrapper .featured .cart-box{
-	padding: 70px 98px;
+	padding: 60px 98px 50px ;
 }
 .cart_wrapper .box .white-cart{
-	padding: 40px 30px;
+	padding: 45px 30px 30px;
 }
 .cart_wrapper .box{
     margin-bottom: 30px;
     background: #FFFFFF;
 	text-align: center;
-	max-width: 40%;
+	max-width: 42%;
 	position: relative;
 	overflow: hidden;
 }
@@ -452,12 +445,19 @@ p{
 	font-size: 25px;
 	font-weight: 400;
 	line-height: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .white-cart .white_head .col_box{
 	column-count: 2;
 	display:flex;
 }	
+.white_head .col_box .right{
+	padding-left: 15px;
+	float: left;	
+}
+.white_head .col_box .left{
+	float: left;	
+}
 .cart_wrapper h2 {
 	color: #FFFFFF;
 	text-align: center;
@@ -632,6 +632,7 @@ footer .social-media{
 	display: flex;
 	list-style: none;
 	float: right;
+	align-items: center;
 }
 footer .social-media img{
 	color: #FFF9EA;
@@ -671,7 +672,7 @@ footer .footer_image img{
 		background-size: 100%;
 	}
 	nav.navbar {
-		padding: 20px 0 10px 0;
+		padding: 16px 0 10px 0;
 		margin-bottom: 10px;
 	}
 	nav.navbar .navbar-nav .nav-link {
@@ -855,6 +856,7 @@ footer .footer_image img{
 		line-height: 32px;
 		text-align: center;
 		margin: 0 10px 20px;
+		left: 0;
 	}
 	.cart_wrapper .row  {
 		margin-top: 0;
@@ -894,10 +896,6 @@ footer .footer_image img{
 		line-height: 20px;
 		margin-bottom: 10px;
 	}
-	.cart_wrapper ul.col {
-		column-count: 1;
-		padding: 0;
-	}
 	.cart_wrapper .btn2-wrap {
 		margin: 0;
 		padding: 10px 15px;
@@ -907,9 +905,15 @@ footer .footer_image img{
 	}
 	.white-cart .white_head .col_box{
 		column-count: 1;
-		display: list-item;
-		column-gap: 0;
-		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.white_head .col_box .left ul{
+		margin-bottom: 0;
+	}
+	.white_head .col_box .right{
+		padding-left: 0;
+		margin: 0;
 	}
 	.cart_wrapper h2 {
 		margin-bottom: 10px;
@@ -938,6 +942,9 @@ footer .footer_image img{
 	}
 	.signup_wrapper {
 		padding: 35px 0;
+	}
+	.signup_wrapper .text_button a.btn-viewraffle{
+		width: 26%;
 	}
 	.client_wrapper img.fossa {
 		width: 45%;
@@ -1110,9 +1117,6 @@ footer .footer_image img{
 		width: 40px;
 		margin: 0 auto;
 	}
-
-
-
 }
 @media(min-width: 768px) and (max-width: 1024px){
 	.homesection {
@@ -1274,15 +1278,15 @@ footer .footer_image img{
 		line-height: 18px;
 	}
 	.cart_wrapper .featured .cart-box {
-		padding: 60px 80px;
+		padding: 60px 80px ;
 	}
 	.cart_wrapper h3.cart_title {
-		margin-bottom: 30px;
+		margin-bottom: 32px;
 		font-size: 34px;
 		line-height: 40px;
 		width: 760px;
 		margin-right: 100px;
-		margin-left: 10px;
+		left: -2%;
 	}
 	.cart_wrapper img.cart-icon {
 		width: 50px;
@@ -1293,11 +1297,14 @@ footer .footer_image img{
 		font-size: 16px;
 		line-height: 22px;
 	}
+	.white_head .col_box .right{
+		padding-left: 5px;
+	}
 	.cart_wrapper {
 		padding: 80px 0;
 	}
 	.cart_wrapper .box .white-cart {
-		padding: 20px 30px;
+		padding: 40px 30px 20px;
 	}
 	.client_wrapper {
 		padding: 60px 0;
@@ -1332,6 +1339,13 @@ footer .footer_image img{
 	}
 	.client_wrapper img.velocity{
 		width: 85%;
+	}
+	footer .copy_right_text .footer_border {
+		padding-bottom: 24px;
+	}
+	footer .footer-top {
+		padding-top: 30px;
+		padding-bottom: 20px;
 	}
 	footer .footerlink a {
 		font-size: 16px;
@@ -1432,8 +1446,11 @@ footer .footer_image img{
 		max-width: 48%;
 	}
 	.cart_wrapper .box .white-cart {
-		padding: 20px 20px;
+		padding: 30px 20px 10px;
 	}
+	.cart_wrapper h3.cart_title {
+		left: 0;
+		margin-left: 12px;
 }	
 @media (max-width: 1024px){
 	.card_wrapper .card {
