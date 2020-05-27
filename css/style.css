@@ -435,8 +435,8 @@ p{
 }
 .cart_wrapper ul i{
 	color: #4D8AF0;
-	font-size: 15px;
-	padding-right: 10px;
+	font-size: 20px;
+	padding-right: 8px;
 	line-height: 20px;
 }	
 .cart_wrapper h5{
@@ -452,7 +452,7 @@ p{
 	display:flex;
 }	
 .white_head .col_box .right{
-	padding-left: 15px;
+	padding-left: 20px;
 	float: left;	
 }
 .white_head .col_box .left{
@@ -509,6 +509,9 @@ p{
 }
 .signup_wrapper h4.title_wrapper{
 	margin-bottom: 30px;
+}
+.signup_wrapper .text_button a.btn-viewraffle{
+	width: 8%;
 }
 .client_wrapper{
 	background-color: #FFDD62;
@@ -944,7 +947,7 @@ footer .footer_image img{
 		padding: 35px 0;
 	}
 	.signup_wrapper .text_button a.btn-viewraffle{
-		width: 26%;
+		width: 15%;
 	}
 	.client_wrapper img.fossa {
 		width: 45%;
@@ -1044,7 +1047,6 @@ footer .footer_image img{
 	}
 	footer .text_button .btn-footer {
 		padding: 2px 8px;
-
 	}
 	 .copyright.col-md-6 {
 		justify-content: center;
