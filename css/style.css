@@ -197,13 +197,16 @@ h6{
 	line-height: 25px;
 	text-align: left;
 }
+.dashboard{
+	padding-top: 42px;
+}
 .dashboard h4.title_wrapper{
 	color: #F5F9FC;
 	max-width: 627px;
 	text-align: center;
 	margin-left: auto;
     margin-right: auto;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 25px;
 }
 .dashboard h6.dashboard_title{
@@ -452,7 +455,7 @@ p{
 	display:flex;
 }	
 .white_head .col_box .right{
-	padding-left: 20px;
+	padding-left: px;
 	float: left;	
 }
 .white_head .col_box .left{
@@ -790,6 +793,9 @@ footer .footer_image img{
 		margin-bottom: 26px;
 		text-align: center;
 	}
+	.dashboard {
+		padding-top: 20px;
+	}
 	.dashboard .row {
 		justify-content: start;
 		padding: 0 15px 20px;
@@ -801,7 +807,7 @@ footer .footer_image img{
 		margin-bottom: 8px;
 	}
 	.dashboard h4.title_wrapper {
-		padding-top: 30px;
+		padding-top: 15px;
 		padding-bottom: 10px;
 	}
 	.dashboard p.description {
@@ -1202,6 +1208,9 @@ footer .footer_image img{
 		padding-top: 40px;
 		margin-left: 0;
 	}
+	.dashboard {
+		padding-top: 32px;
+	}
 	.dashboard h6.dashboard_title {
 		font-size: 19px;
 		line-height: 23px;
@@ -1219,7 +1228,7 @@ footer .footer_image img{
 		height: 100px;
 	}
 	.dashboard h4.title_wrapper {
-		padding-top: 40px;
+		padding-top: 30px;
 		padding-bottom: 25px;
 	}
 	.dashboard p.description {
