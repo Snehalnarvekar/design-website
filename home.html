@@ -4,9 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charity 5050 Raffle</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.typekit.net/lay1rkp.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
+	<script src="https://kit.fontawesome.com/f17b18449a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Boxicons CSS -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -14,37 +16,34 @@
     </head>
 
     <body class="home-page">
-           
         <div class="homesection">
-            <div class="head_section head_menu">
-                <div class="container">
-                    <nav class="navbar navbar-expand-md ">
-                        <a class="navbar-brand logo" href="#">
-                                <img src="images/CharityLogo.png" alt="Charity-logo">
-                            </a>
-                        <button class="navbar-toggler collapsebutton" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="true" aria-label="Toggle navigation">
-                                
-                        </button>
-                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                            <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                    <a class="nav-link" href="#">Raffles</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Pricing</a>
-                                </li>    
-                            </ul>
-                            <div class="text_button ml-auto mr-1">
-                                <a href="" class="btn btn-positive ">Charity sign up</a>
-                            </div>
-                        </div>                     
-                    </nav> 
-                </div>
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light ">
+                    <a class="navbar-brand logo" href="#">
+                            <img src="images/CharityLogo.png" alt="Charity-logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class=" navbar-collapse collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">Raffles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>    
+                        </ul>
+                        <div class="text_button ml-auto mr-1">
+                            <a href="" class="btn btn-positive ">Charity sign up</a>
+                        </div>
+                    </div>                     
+                </nav> 
             </div> 
-            <div class="container">   
+            <div class="menu_wrapper container">   
                 <div class=" row text_container align-item-center">
                     <div class=" col-md-6 text_box  ">  
                         <h1 class="text_title">Start your own 50-50 raffle today</h1>
@@ -60,7 +59,6 @@
                 </div>
             </div> 
         </div>
-    
         <div class="springwrapper">
                 <div class=" container"> 
                 <div class="row spring-content justify-content-between align-item-center">
@@ -175,7 +173,6 @@
                 </div>
             </div>
         </div>
-        
         <div class="createwrapper "> 
             <div class="container ">
                 <div class="row create_content justify-content-between align-items-center">
@@ -195,82 +192,76 @@
                 </div>
             </div>
         </div>  
-        
         <div class="review_wrapper"> 
-            <div class="container"> 
-                <div class="row review_content justify-content-center">
-                    <div class="review_title" >
-                        <h3 class="">What our customer are saying </h3>
-                    </div>
-                </div>        
-                <div class="row review_quote justify-content-center">
-                    <div class = "carousel slide" data-ride = "carousel" id = "quote-carousel">
-                        <div class = "carousel-inner text-center">
-                            <!-- Quote 1 -->
-                            <div class = "carousel-item">
-                                <div class = "carousel-item-quote">
-                                    <img  class="quote-icon" src="svg/quote.png" alt="">
-                                    <div class = "quote-text" >
-                                        <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Quote 2 -->
-                            <div class = "carousel-item active">
-                                    <div class = "carousel-item-quote">
-                                        <img  class="quote-icon" src="svg/quote.png" alt="">
-                                        <div class = "quote-text">
-                                            <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                            </h5>
-                                        </div>
-                                    </div>
-                            </div>
-                            <!-- Quote 3 -->
-                            <div class = "carousel-item ">
-                                <div class = "carousel-item-quote">
-                                    <img  class="quote-icon" src="svg/quote.png" alt="">
-                                    <div class = "quote-text">
-                                        <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="container">
+                <div class="carousel_title" >
+                    <h3>What our customer are saying </h3>
+                </div>      
+                <div class = "testimonial_wrap owl-carousel">
+                    <div class = "testimonial_item">
+                        <div class = "testimonial_quote">
+                            <img src="images/quote.png" alt="quote-image">
+                            <p class ="testimonial-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            </p>
                         </div>
                     </div>
-                </div> 
-                <!-- Bottom Carousel Indicators -->
-                <ul class = "carousel-indicator" id="#carousel-indicator">
-                    <li data-target = "#quote-carousel" data-slide-to = "0"> 
-                        <div class="testimonial-item">
-                            <img class="testimonial-img" src="images/Cha Ji-Huns.png" alt="">
-                            <h6 >Cha Ji-Huns</h6>
-                            <p>Co-founder of ABC</p>
+                    <div class ="testimonial_item">
+                        <div class ="testimonial_quote">
+                            <img src="images/quote.png" alt="quote-image">
+                            <p class ="testimonial-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            </p>
+                        </div>
+                    </div>  
+                    <div class = "testimonial_item">
+                        <div class = "testimonial_quote">
+                            <img src="images/quote.png" alt="quote-image">
+                             <p class="testimonial-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            </p>    
+                        </div>
+                    </div>
+                </div>     
+                <ul id="carousel_indicator" class ="owl-dots">
+                    <li class="owl-dot active"> 
+                        <div class="carousel_box">
+                            <div class="author-left">
+                                <img class="carousel-img" src="images/Cha Ji-Huns.png" alt="author-image">
+                            </div>
+                            <div class="author-right">
+                                <h6 >Cha Ji-Huns</h6>
+                                <p>Co-founder of ABC</p>
+                            </div>
                         <div>
                     </li>
-                    <li data-target = "#quote-carousel" data-slide-to= "1" class = "active">
-                        <div class="testimonial-item">
-                            <img class="testimonial-img" src="images/Rutherford.png" alt="">
-                            <h6 >Rutherford Brannan</h6>
-                            <p>Co-founder of ABC</p>
-                        <div>
+                    <li class="owl-dot">
+                        <div class="carousel_box">
+                            <div class="author-left">
+                                <img class="carousel-img" src="images/author2.png" alt="author-image">
+                            </div>
+                            <div class="author-right">
+                                <h6 >Rutherford Brannan</h6>
+                                <p>Co-founder of ABC</p>
+                            </div>
+                        </div>
                     </li>
-                    <li data-target = "#quote-carousel" data-slide-to = "2">
-                        <div class="testimonial-item">
-                            <img class="testimonial-img" src="images/Henry.png" alt="">
-                            <h6>Henry Itondo</h6>
-                            <p>Co-founder of ABC</p> 
+                    <li class="owl-dot">
+                        <div class="carousel_box">
+                            <div class="author-left">
+                                <img class="carousel-img" src="images/author3.png" alt="author-image">
+                            </div>
+                            <div class="author-right">
+                                <h6>Henry Itondo</h6>
+                                <p>Co-founder of ABC</p>
+                            </div> 
                         <div>
                     </li>
                 </ul>
-            </div>
-        </div>   
+            </div> 
+        </div> 
+        
        <div class="cart_wrapper">
             <div class="container ">
                 <div class="row justify-content-center">
@@ -299,22 +290,32 @@
                     </div>
                     <div class="col-md-6 box ">
                         <div class="white-cart">
-                            <p class="top-title">Create your account and raffle</p>
-                            <h5>Design a custom package for your business
-                            </h5> 
-                            <ul class="col">
-                                <li><i class="bx bx-check"></i><p> Create Your Charity or Non-profit Profile</p></li>
-                                <li><i class="bx bx-check"></i><p>Create and Configure Your Raffle</p></li>
-                                <li><i class="bx bx-check"></i><p>Pay Only When Your Raffle is Ready to Launch</p></li>
-                            <ul>
-                                    <li><i class="bx bx-check"></i><p>Upload Your AGLC Raffle License</p></li>
-                                <li><i class="bx bx-check"></i><p>Connect Your Bank for Ticket Sales Deposit</p></li>
-                            </ul>
-                            </ul>
+                            <div class="white_head">
+                                <p class="top-title">Create your account and raffle</p>
+                                <h5>Design a custom package for your business
+                                </h5>
+                                <div class="col_box"> 
+                                    <div class="left">    
+                                        <ul>
+                                            <li><i class="bx bx-check"></i><p> Create Your Charity or Non-profit Profile</p></li>
+                                            <li><i class="bx bx-check"></i><p>Create and Configure Your Raffle</p></li>
+                                            <li><i class="bx bx-check"></i><p>Pay Only When Your Raffle is Ready to Launch</p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="right">
+                                        <ul>
+                                            <li><i class="bx bx-check"></i><p>Upload Your AGLC Raffle License</p></li>
+                                            <li><i class="bx bx-check"></i><p>Connect Your Bank for Ticket Sales Deposit</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="btn2-wrap">
-                            <a href="" class="signupfree">sign up free</a>
-                        </div> 
+                        <div class="white_footer">
+                            <div class="btn2-wrap">
+                                <a href="" class="signupfree">sign up free</a>
+                            </div> 
+                        </div>    
                     </div>
                 </div>
                 <div class="row cart_footer">
@@ -376,7 +377,7 @@
             <div class=" container">
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-5 newsetter-box text-center">
-                    <span>Newsetter</span>
+                    <p class="top-title">Newsetter</p>
                     <h3>Stay on top of our latest news!</h3>
                     <form action="" method="post">
                         <input class="email" type="email" name="email" placeholder="email@domain.com" required>
@@ -445,10 +446,40 @@
     </footer> 
     
     <script src="js/jquery-3.4.1.min.js"></script>
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="js/smooth-scroll.polyfills.min.js"></script>
-    <script></script>
+    <script>
+        
+		$(document).ready(function(){
+			$('.testimonial_wrap.owl-carousel').owlCarousel({
+				loop:true,
+				margin:10,
+				nav:false,
+				autoplay:false,
+				center:true,
+				autoplayTimeout:2000,
+				autoplayHoverPause:true,
+				dots:true,
+				dotsContainer: '#carousel_indicator',
+				responsive:{
+					0:{
+						items:1,
+						dotsEach: 1,
+					},
+					768:{
+						dotsEach: 3,
+						items:1	
+					}
+				}
+			});
+			$('.owl-dot').click(function () {
+				$('.testimonial_wrap.owl-carousel').trigger('to.owl.carousel', [$(this).index(), 300]);
+			});
+		});
+    </script>
     </body>
 </html>
