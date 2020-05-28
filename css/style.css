@@ -108,13 +108,13 @@ h5.text_content{
 	margin-right: 150px;
 	padding-bottom: 40px;
 }
- .menu_wrapper .image_box  {	
+ .homesection .image_box  {	
 	max-width: 110%;
 	position: unset;
 	padding-left: 0;
 	padding-right: 0;
 }
- .menu_wrapper .image_box {
+ .homesection .image_box {
 	margin-top: -10%;
 }
 .springwrapper .text_box {
@@ -686,10 +686,14 @@ footer .footer_image img{
 		font-size: 16px;
 		line-height: 24px;
 	}
-	.menu_wrapper .image_box {
+	.homesection .image_box {
 		padding-right: 10px;
 		padding-left: 10px; 
-	}
+	} 
+    .head_wrapper .container {
+        position: relative;
+        z-index: 1;
+    }
 	a.navbar-brand {
 		max-width: 160px;
 	}
@@ -724,11 +728,12 @@ footer .footer_image img{
 	.text_container .text_button {
 		text-align: center;
 	}
-	.menu_wrapper .image_box {
+	.homesection .image_box {
 	 margin-top: auto;
 	}
-	.text_container {
+	.homesection .text_container {
 		padding-top: 20px;
+		position: relative;
 	}
 	.springwrapper .row.spring-content {
 		padding: 30px 0 0 0;
