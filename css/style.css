@@ -980,22 +980,20 @@ footer .footer_image img{
 		margin: 0 auto;
 	}
 	.client_wrapper img.asgardia {
-		width: 164px;
-		max-height: 100%;
+		width: 170px;
+		margin-left: 0;
 	}
 	.client_wrapper img.kanba {
-		width: 116px;
-	}
-	.client_wrapper img.aven {
-		padding-top: 8px;
-		width: 128px;
-	}
-	.client_wrapper img.kyan {
 		width: 110px;
 	}
+	.client_wrapper img.aven {
+		width: 110px;
+	}
+	.client_wrapper img.kyan {
+		width: 115px;
+	}
 	.client_wrapper img.velocity {
-		padding-top: 8px;
-		width: 158px;
+		width: 148px;
 	}
 	.client_wrapper {
 		padding: 60px 0 64px 0;
@@ -1363,6 +1361,7 @@ footer .footer_image img{
 	}
 	.client_wrapper .grid-container {
 		grid-gap: 30px 10px;
+		margin-left: -20px;
 	}	
 	.client_wrapper .grid-items{
 		text-align: center;
@@ -1371,23 +1370,28 @@ footer .footer_image img{
 	.client_wrapper .description {
 		width: 90%;
 		padding-top: 0;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.client_wrapper img.fossa {
+		width: 46%;
 	}
 	.client_wrapper img.asgardia{
-		width: 90%;
-		max-height: 95%;
+		width: 178px;
+		margin-left: -20px;
 	}
 	.client_wrapper img.kanba{
-		width:85%;
+		width:120px;
 	}
 	.client_wrapper img.aven{
-	
-		width: 85%;
+		width: 120px;
 	}
 	.client_wrapper img.kyan{
-		width: 80%;
+		width: 125px;
 	}
 	.client_wrapper img.velocity{
-		width: 85%;
+		width: 150px;
+		margin-left: -30px;
 	}
 	footer .copy_right_text .footer_border {
 		padding-bottom: 24px;
@@ -1531,6 +1535,9 @@ footer .footer_image img{
 	}
 	.cart_wrapper .cart_footer {
 		padding-top: 22px;
+	}
+	.client_wrapper img.kyan{
+		width: 120px;
 	}
 }	
 
