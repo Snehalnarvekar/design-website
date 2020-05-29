@@ -28,22 +28,21 @@ a:hover {
 	
 }
 .container{
-	max-width: 1240px;
-	padding: 0px 15px;
+	max-width: calc( 1140px + 30px);
 	margin-right: auto;
 	margin-left: auto;
 }
 .homesection {
 	background-color:	 #FFF9EA;
 	background-image: url(../svg/bg-svg-img.svg);
-    padding-bottom: 130px;
+    padding-bottom: 125px;
 	background-position: right top;
 	background-repeat: no-repeat;
-	background-size: 74%;
+	background-size: 72%;
 }
 nav.navbar{
-	padding-top: 40px;
-	margin-bottom: 20px;
+	padding: 38px 0 10px 0;
+	margin-bottom: 50px;
 }
 a.navbar-brand{
 	max-width: 245px;
@@ -73,17 +72,24 @@ nav.navbar .navbar-nav .nav-link {
 	line-height: 25px;
 	text-align: center;
 }
- .text_button a.btn-positive{
+.text_button a.btn-positive{
     background-color: #FF7900;
 	color: #FFFFFF;
 	border-color: #FF7900;
+}
+.head_wrapper .text_button a.btn-positive{
+	padding: 7px 23px;
+}
+.text_container .text_button a.btn-positive{
+	padding: 7px 36px;
 }
 .menu_wrapper .row{
     display: flex;
     flex-wrap: wrap;
 }
-.text_container{
-    padding-top: 180px;
+.homesection .text_box{
+	padding-right: 80px;
+	padding-top: 165px;
 }
  h1.text_title{
 	color: #593A30;
@@ -93,7 +99,6 @@ nav.navbar .navbar-nav .nav-link {
 	font-size: 70px;
 	line-height: 75px;
 	text-align: left;
-	padding-top: 20px;
     padding-bottom: 40px;
 }
 h5.text_content{	
@@ -105,29 +110,28 @@ h5.text_content{
     text-align: left; 
 }
 h5.text_content{
-	margin-right: 150px;
+	padding-right: 150px;
 	padding-bottom: 40px;
 }
- .homesection .image_box  {	
-	max-width: 110%;
-	position: unset;
-	padding-left: 0;
-	padding-right: 0;
-}
- .homesection .image_box {
-	margin-top: -10%;
+ .text_container .image_box  {	
+	width: 135%;
+	margin-left: -65px;
 }
 .springwrapper .text_box {
 	padding-top: 45px;
 	margin-left: 22%;
 	padding-right: 80px;
 }
+.card_wrapper{
+	float: left;
+}
 .card_wrapper .col2{
-	margin-top: 18%;
+	padding-top: 115px;
 }
 .card_wrapper .col1, .card_wrapper .col2{
 	width: 50%;
 	float: left;
+	padding-left: 30px;
 }
 .card_wrapper .card{
 	background-color: #FFDD62;
@@ -142,7 +146,7 @@ h5.text_content{
 	object-fit: cover;
 } 
 .card .card_text{
-	padding: 16px;
+	padding: 15px;
 	display: flex;
 }
  h6.card-title{
@@ -156,8 +160,9 @@ h5.text_content{
 	width: 24px;
 	margin-left: 2px;
 } 	
-.springwrapper .row.spring-content{
-	padding: 120px 0 0 0;
+.springwrapper{
+	max-height: 691px;
+	padding: 140px 0 0 0;
 }
  h4.title_wrapper{
 	color:  #593A30;
@@ -183,13 +188,14 @@ p.description{
 }
 .text_button a.btn-viewraffle{
 	background-color: #FFF0E1;
-	width: 158px;
+	padding: 8px 25px;
 	color: #FF7900;
 	border-color:#FFF0E1;
 }
-.dashboard{
+.dashboard_wrapper{
 	background-color: #2B2B2B;
-	width: 100%;
+	padding: 80px 0 20px;
+	position: relative;
 }
 h6{
 	font-family: 'Lato', sans-serif;
@@ -198,37 +204,37 @@ h6{
 	line-height: 25px;
 	text-align: left;
 }
-.dashboard{
-	padding-top: 42px;
-}
-.dashboard h4.title_wrapper{
+.dashboard_top h4.title_wrapper{
 	color: #F5F9FC;
-	max-width: 627px;
 	text-align: center;
-	margin-left: auto;
+	margin: 0 auto;
     margin-right: auto;
-    padding-top: 40px;
-    padding-bottom: 25px;
+    padding-bottom: 80px;
 }
-.dashboard h6.dashboard_title{
+ h6.dashboard_title{
 	color: #F5F9FC;
-	margin-left: 50px;
+	margin-left: 60px;
     margin-bottom: 10px;
 }
-.dashboard p.description{
+.dashboard_wrap{
+	max-width: 750px;
+	margin: 0 auto;
+}
+.dashboard_wrap_list p.description{
 	color: #E1E9F0;
-	margin-left: 50px;
+	margin-left: 60px;
 }
-.dashboard .row{
-	justify-content: center;
-	padding: 0 50px 50px;
+.dashboard_wrap_list {
+	column-count: 2;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
-.dashboard .column{
-	width: 350px;
-	height: 120px;
-	margin: 40px 32px 0 0;
+.dashboard_wrap_list .column{
+	max-width: 360px;
+	padding-bottom: 70px;
 }
-.dashboard .dashboard_icon {
+.dashboard_wrap_list .dashboard_icon {
 	width: 40px;
 	float: left;
 }
@@ -247,7 +253,7 @@ h2{
 	padding: 100px 0 100px 0;
 }
 .createwrapper .create_wrap_img{
-	max-width: 94%;
+	width: 85%;
 }
 .createwrapper .create_wrap_text{
 	padding-left: 100px;
@@ -354,14 +360,13 @@ p.testimonial-content{
 .cart_wrapper{
 	background-color: #FFF9EA;
 	position: relative;
-	width: 100%;
-	padding: 100px 0;
+	padding: 108px 0 137px 0;
 }
 .cart_wrapper h3.cart_title{
-	margin-bottom: 35px;
+	margin-bottom: 43px;
 	width:946px;
 	text-align: left;
-	left: -4%;
+	left: -2%;
 }
 .cart_wrapper img.cart-icon {
 	width: 64px;
@@ -402,12 +407,10 @@ p{
     text-align: center;
 	text-transform: uppercase;
 }
-.cart_wrapper .row{
+.cart_wrapper .row.cart_content {
 	display: flex;
-	margin-top: 50px;
-	align-items: center;
-	justify-content: center;
-	padding:0 auto;
+	margin-top:10px;
+	padding: 0 auto;
 }
 .cart_wrapper .featured .cart-box{
 	padding: 60px 98px 50px ;
@@ -430,7 +433,10 @@ p{
 	margin: -30px -5px 0 -5px;
 }
 .cart_wrapper .cart_footer {
-	padding: 0 auto 0 auto;
+	padding-top: 63px;
+	margin: 0 auto ;
+	justify-content: center;
+	align-items: center;
 }
 .cart_wrapper .description{
 	color: #898989;
@@ -456,7 +462,7 @@ p{
 	display:flex;
 }	
 .white_head .col_box .right{
-	padding-left: px;
+	padding-left:8px;
 	float: left;	
 }
 .white_head .col_box .left{
@@ -509,26 +515,23 @@ p{
 	color:#FF7900; 
 }
 .signup_wrapper{
-	padding: 90px 0;
+	padding: 82px 0 90px 0;
 }
 .signup_wrapper h4.title_wrapper{
-	margin-bottom: 30px;
+	padding-bottom: 30px;
+	margin: 0;
 }
 .signup_wrapper .text_button a.btn-viewraffle{
-	width: 8%;
+	padding: 8px 36px;
 }
 .client_wrapper{
 	background-color: #FFDD62;
-	position: relative;
-	width: 100%;
-	float: left;
-	padding: 80px 0;
-	margin-bottom: 2em;
+	padding: 98px 0 115px 0;
 }
 .client_wrapper .grid-container {
 	position: relative;
 	display: grid;
-	grid-gap: 50px 100px;
+	grid-gap: 20px 30px;
 	grid-template-columns: auto auto auto;
 }	
 .client_wrapper .grid-items{
@@ -539,22 +542,20 @@ p{
 	width: 44%;	
 }
 .client_wrapper img.asgardia{
-	width: 180px;
-	max-height: 95%;
+	width: 204px;
+	margin-left: -30px;
 }
 .client_wrapper img.kanba{
-	width:180px;
+	width:137px;
 }
 .client_wrapper img.aven{
-	padding-top: 8px;
-	width: 180px;
-}
-.client_wrapper img.kyan{
 	width: 160px;
 }
+.client_wrapper img.kyan{
+	width: 132px;
+}
 .client_wrapper img.velocity{
-	padding-top: 8px;
-	width: 180px;
+	width: 187px;
 }
 .client_wrapper .description{
 	padding-top: 20px;
@@ -566,16 +567,20 @@ p{
 .client_wrapper img{
 	display: block;
 } 
-.form_wrapper p.description{
+.newsetter-box p.description{
 	color: #3B5266;
 	text-align: center;
 	margin-top: 25px;
 }
 .form_wrapper {
 	background-color: #FFF9EA;
-	padding: 60px 0 45px 0;
+	padding: 70px 0 80px 0;
 }
-.form_wrapper .newsetter-box form input[type="email"] {
+.newsetter-box{
+	max-width: 385px;
+	margin: 0 auto;
+}
+.newsetter-box form input[type="email"] {
 	border: 0;
 	padding: 4px 8px;
 	width: calc(100% - 100px);
@@ -584,7 +589,7 @@ p{
 	font-size: 13px;
 	line-height: 20px;
 }
-.form_wrapper .newsetter-box form input[type="submit"] {
+ .newsetter-box form input[type="submit"] {
 	position: absolute;
     top: -1px;
     right: -2px;
@@ -599,7 +604,7 @@ p{
     color: #FF7900;
 	transition: 0.3s;
 }
-.form_wrapper .newsetter-box form{
+ .newsetter-box form{
 	margin-top: 30px;
     background: #FFFFFF;
     padding: 8px 10px;
@@ -675,27 +680,23 @@ footer .footer_image img{
 
 @media (max-width: 767px){
 	.homesection {
-		padding-bottom: 28px;
+		padding-bottom: 42px;
 		background-size: 100%;
 	}
 	nav.navbar {
-		padding: 16px 0 10px 0;
-		margin-bottom: 10px;
+		padding: 15px 0 10px 0;
+		margin-bottom: 20px;
 	}
 	nav.navbar .navbar-nav .nav-link {
 		font-size: 16px;
 		line-height: 24px;
-	}
-	.homesection .image_box {
-		padding-right: 10px;
-		padding-left: 10px; 
 	} 
     .head_wrapper .container {
         position: relative;
         z-index: 1;
     }
 	a.navbar-brand {
-		max-width: 160px;
+		max-width: 170px;
 	}
 	#navbarSupportedContent {
 		background: #FFFFFF;
@@ -707,13 +708,10 @@ footer .footer_image img{
 		box-shadow: 1px 1px 4px 0 #c6c6c666;
 	}
 	nav.navbar .navbar-nav .nav-item {
-		padding-left: 10px;
+		padding-left: 0;
 	}
 	.container{
 		max-width: 600px;
-	}
-	.text_button a.btn-positive {
-		padding: 4px 10px;
 	}
 	h1.text_title{
 		font-size: 35px;
@@ -722,36 +720,44 @@ footer .footer_image img{
 		text-align: center;
 		padding-top: 0;
 		padding-bottom: 0;
+		margin-bottom: 0;
 	}
 	h5.text_content{
 		font-size: 20px;
 		line-height: 30px;
-		width: 85%;
 		text-align: center;
-		padding-bottom: 20px;
-		margin: 0 auto 0 auto;
+		padding:15px 0 20px;
+		margin: 0 auto;
 	}
 	.text_container .text_button {
 		text-align: center;
 	}
-	.homesection .image_box {
-	 margin-top: auto;
+	.homesection .text_box {
+		padding-right: 10px;
+		width: 450px;
+		margin: 0 auto;
+		padding-top: 16px;
 	}
 	.homesection .text_container {
-		padding-top: 20px;
 		position: relative;
 	}
-	.springwrapper .row.spring-content {
-		padding: 30px 0 0 0;
+	.text_container .image_box {
+		width: 100%;
+		margin-left: 0;
+		margin: 0 auto;
+	}
+	.springwrapper {
+		padding-top: 40px;
+		max-height: initial;
+		padding-bottom: 30px;
 	}
 	.springwrapper .text_box {
 		padding-top: 20px;
-		 margin-left: 0;
+		 margin: 0;
 		 padding-right: 0;
 	}
 	.card_wrapper .col2{
-		margin-top: 0;
-		margin-bottom: 20px;
+		padding-top: 0;
 	}
 	.card .card_image img{
 		max-width: 100%;
@@ -760,6 +766,7 @@ footer .footer_image img{
 	}
 	.card_wrapper .col1, .card_wrapper .col2{
 		width: 100%;
+		padding-left: 0;
 	}
 	h6.card-title{
 		font-size: 18px;
@@ -774,7 +781,8 @@ footer .footer_image img{
 		justify-content: center;
 	}  
 	.card_wrapper .card {
-		margin: 5px auto 20px auto;
+		max-width: 100%;
+		margin-bottom: 20px;
 	}
 	h4.title_wrapper {
 		text-align: center;
@@ -786,14 +794,14 @@ footer .footer_image img{
 		line-height: 26px;
 	}
 	.springwrapper h4.title_wrapper {
-		padding-bottom: 10px;
+		padding-bottom: 14px;
+		margin-bottom: 0;
 		text-align: center;
 		width: 100%;
 	}
 	.springwrapper p.description {
-		width:100%;
-		text-align: center;
-		padding-bottom: 10px;
+		padding-bottom: 20px;
+		padding-left: 10px;
 	}
 	 p.description {
 		font-size: 15px;
@@ -803,48 +811,52 @@ footer .footer_image img{
 		margin-bottom: 26px;
 		text-align: center;
 	}
-	.dashboard {
-		padding-top: 20px;
+	.dashboard_wrapper {
+		padding-top: 40px 0 24px;
 	}
-	.dashboard .row {
-		justify-content: start;
-		padding: 0 15px 20px;
+	.dashboard_wrap_list {
+		column-count: 1;
 	}
-	.dashboard h6.dashboard_title {
+	.dashboard_wrap_list .column{
+		max-width: 100%;
+		padding-bottom: 26px;
+	}
+	.dashboard_wrap_list h6.dashboard_title {
 		font-size: 18px;
 		line-height: 22px;
 		margin-left: 38px;
 		margin-bottom: 8px;
 	}
-	.dashboard h4.title_wrapper {
-		padding-top: 15px;
-		padding-bottom: 10px;
+	.dashboard_top h4.title_wrapper {
+		padding-top: 0;
+		padding-bottom: 30px;
 	}
-	.dashboard p.description {
+	.dashboard_wrap_list p.description {
 		font-size: 14px;
 		line-height: 22px;
 		margin-left: 38px;
+		margin-bottom: 0;
 	}
-	.dashboard .column {
-		width: 100%;
-		height: 100%;
-		margin: 10px 0 0 0;
-	}
-	.dashboard .dashboard_icon {
+	.dashboard_wrap_list .dashboard_icon {
 		width: 32px;
+	}
+	.createwrapper .create_wrap_img {
+		max-width: 400px;
+		margin: 0 auto 40px auto;
 	}
 	.createwrapper h2.title-wrapper {
 		padding-bottom:20px;
 		font-size: 30px;
 		line-height: 36px;
 		margin-bottom: 0;
+		max-width: 100%;
 		text-align: center;
 	}
 	.createwrapper p.description {
 		padding-bottom: 20px;
 		font-size: 15px;
 		line-height: 21px;
-		text-align: center;
+		max-width: 100%;
 	}
 	.createwrapper .text_button{
 		text-align: center;
@@ -853,8 +865,7 @@ footer .footer_image img{
 		padding: 50px 0 40px 0;
 	}
 	.createwrapper .create_wrap_text {
-		padding-left: 15px;
-		margin-top: 30px;
+		padding: 15px;
 	}
 	.review_title h3 {
 		margin-bottom: 20px;
@@ -866,22 +877,18 @@ footer .footer_image img{
 		padding: 40px 0 30px 0;
 	}
 	.cart_wrapper {
-		padding: 50px 0;
+		padding: 40px 0 40px  0;
 	}
 	.cart_wrapper h3.cart_title {
-		margin-bottom: 20px;
 		width: 600px;
 		font-size: 26px;
 		line-height: 32px;
 		text-align: center;
-		margin: 0 10px 20px;
 		left: 0;
-	}
-	.cart_wrapper .row  {
-		margin-top: 0;
+		padding: 0;
 	}
 	.cart_wrapper .row.cart_footer {
-		flex-direction: row;
+		padding-top: 10px;
 	}
 	.cart_wrapper img.cart-icon {
 		width: 34px;
@@ -944,6 +951,9 @@ footer .footer_image img{
 		line-height: 16px;
 		margin-bottom: 10px;	
 	}
+	.cart_wrapper .row.cart_content {
+		margin-top: 0;
+	}
 	.cart_wrapper h2 sup {
 		font-size: 22px;
 		line-height: 26px;
@@ -960,10 +970,10 @@ footer .footer_image img{
 		text-align: left;
 	}
 	.signup_wrapper {
-		padding: 35px 0;
+		padding: 40px 0 40px 0;
 	}
-	.signup_wrapper .text_button a.btn-viewraffle{
-		width: 15%;
+	.signup_wrapper h4.title_wrapper {
+		padding-bottom: 20px;
 	}
 	.client_wrapper img.fossa {
 		width: 45%;
@@ -988,8 +998,7 @@ footer .footer_image img{
 		width: 158px;
 	}
 	.client_wrapper {
-		padding: 30px 0;
-		margin-bottom: 2em;
+		padding: 60px 0 64px 0;
 	}
 	.client_wrapper .description {
 		padding-top: 0;
@@ -1014,17 +1023,19 @@ footer .footer_image img{
 	h3 {
 		font-size: 26px;
 		line-height: 32px;
-		padding-bottom: 10px;
 	}
-	.form_wrapper .newsetter-box form {
+	.newsetter-box h3{
+		padding-bottom: 20px;
+	}
+	.newsetter-box form {
 		margin-top: 10px;
 	}
-	.form_wrapper p.description {
+	.newsetter-box p.description {
 		margin-top: 20px;
 		font-size: 14px;
 		line-height: 20px;
 	}
-	.form_wrapper .top-title {
+	.newsetter-box .top-title {
 		font-size: 12px;
 		line-height: 18px;
 		margin-bottom: 15px;
@@ -1032,7 +1043,7 @@ footer .footer_image img{
 	.form_wrapper {
 		padding: 40px 0 40px 0;
 	}
-	.form_wrapper .newsetter-box form input[type="submit"] {
+	.newsetter-box form input[type="submit"] {
 		font-size: 14px;
 		line-height: 26px;
 		padding: 0 14px;
@@ -1138,10 +1149,11 @@ footer .footer_image img{
 }
 @media(min-width: 768px) and (max-width: 1024px){
 	.homesection {
-		padding-bottom: 65px;
+		padding-bottom: 64px;
 	}
-	.navbar-expand-md .navbar-nav {
-		width: auto;
+	nav.navbar {
+		padding: 18px 0 10px 0;
+		margin-bottom: 20px;
 	}
 	nav.navbar .navbar-nav .nav-item {
 		padding-left: 0;
@@ -1164,23 +1176,39 @@ footer .footer_image img{
 		padding-bottom: 20px;
 		margin: 0;
 	}
+	.text_container .image_box {
+		width: 120%;
+		margin-left: -70px;
+	}
 	h5.text_content{
 		font-size: 23px;
 		line-height: 33px;
 		width: 100%;
 		padding-bottom: 15px;
 	}
-	.text_container {
+	h5.text_content {
+		padding-right: 100px;
+		padding-bottom: 30px;
+	}
+	.head_wrapper .text_button a.btn-positive{
+		padding: 7px 20px;
+	}
+	.homesection .text_box {
 		padding-top: 110px;
+		padding-right: 70px;
 	}
 	.menu_wrapper .image_box  {	
 		padding-right: 10px;
 	}
-	.springwrapper .row.spring-content {
-		padding: 100px 0 0 0;
+	.springwrapper{
+		padding: 72px 0 0 0;
+		max-height: 608px;
 	}
 	.springwrapper .text_box {
 		padding-top: 40px;	
+	}
+	.springwrapper h4.title_wrapper {
+		padding-bottom: 12px;
 	}
 	h4.title_wrapper {
 		text-align: center;
@@ -1188,16 +1216,17 @@ footer .footer_image img{
 		line-height: 36px;
 	}
 	 .card_wrapper{
-		margin-left: -10px;
-		padding: 0;
+		margin-left: -90px;
+		float: right;
 	}
 	.card .card_text{
-		padding: 10px;
+		padding: 10px ;
 		justify-content: center;
 	} 
-	.springwrapper .text_box {
-		padding-top: 45px;
-		margin-left: 0;
+	.springwrapper p.description {
+		padding-bottom: 15px;
+		font-size: 15px;
+		line-height: 22px;
 	}
 	 h6.card-title{
 		font-size: 17px;
@@ -1210,38 +1239,34 @@ footer .footer_image img{
 	.card_wrapper .card{
 		margin-bottom: 20px;
 		margin-right: 20px;
-	}	
-	.springwrapper .row.spring-content{
-		padding: 100px 0 0 0;
 	}
+	.card_wrapper .col1, .card_wrapper .col2 {
+		padding-left: 0; 
+	}	
 	.springwrapper .text_box {
 		padding-top: 40px;
 		margin-left: 0;
 	}
-	.dashboard {
-		padding-top: 32px;
+	.dashboard_wrapper {
+		padding: 40px 0 20px;
 	}
-	.dashboard h6.dashboard_title {
+	.dashboard_wrap_list .column{
+		padding-bottom: 40px;
+	}
+	.dashboard_wrap_list h6.dashboard_title {
 		font-size: 19px;
 		line-height: 23px;
 		margin-left: 40px;
 		margin-bottom: 8px;
 	}
-	.dashboard .dashboard_icon {
+	.dashboard_wrap_list .dashboard_icon {
 		width: 35px;
 	}
-	.dashboard .row {
-		padding: 0 10px 50px;
+	.dashboard_top h4.title_wrapper {
+		padding-top: 10px;
+		padding-bottom: 50px;
 	}
-	.dashboard .column{
-		margin: 30px 0 0 0;
-		height: 100px;
-	}
-	.dashboard h4.title_wrapper {
-		padding-top: 30px;
-		padding-bottom: 25px;
-	}
-	.dashboard p.description {
+	.dashboard_wrap_list p.description {
 		color: #E1E9F0;
 		margin-left: 40px;
 		font-size: 16px;
@@ -1257,14 +1282,17 @@ footer .footer_image img{
 		margin-bottom: 0;
 	}
 	.createwrapper .create_content {
-		padding: 75px 0 60px 0;
+		padding: 75px 0 68px 0;
 	}
 	.createwrapper p.description {
 		padding-bottom: 30px;
 		margin-bottom: 0;
 	}
+	.cart_wrapper .row.cart_content {
+		margin-top: 0;
+	}
 	.cart_wrapper .box {
-		margin-bottom: 30px;
+		margin-top: 0;
 		max-width: 44%;
 	}
 	.cart_wrapper .btn2-wrap {
@@ -1299,7 +1327,7 @@ footer .footer_image img{
 		line-height: 18px;
 	}
 	.cart_wrapper .featured .cart-box {
-		padding: 60px 80px ;
+		padding: 64px 80px ;
 	}
 	.cart_wrapper h3.cart_title {
 		margin-bottom: 32px;
@@ -1321,20 +1349,20 @@ footer .footer_image img{
 	.white_head .col_box .right{
 		padding-left: 5px;
 	}
+	.cart_wrapper .cart_footer {
+		padding-top: 42px;
+	}
 	.cart_wrapper {
-		padding: 80px 0;
+		padding: 75px 0 68px 0;
 	}
 	.cart_wrapper .box .white-cart {
 		padding: 40px 30px 20px;
 	}
 	.client_wrapper {
-		padding: 60px 0;
+		padding: 60px 0 64px 0;
 	}
 	.client_wrapper .grid-container {
-		position: relative;
-		display: grid;
 		grid-gap: 30px 10px;
-		grid-template-columns: auto auto auto;
 	}	
 	.client_wrapper .grid-items{
 		text-align: center;
@@ -1383,7 +1411,7 @@ footer .footer_image img{
 		line-height: 40px;
 	}
 	.review_wrapper {
-		padding: 60px 0 120px 0;
+		padding: 60px 0 70px 0;
 	}
 	.review_wrapper .carousel_title {
 		padding-bottom: 58px;
@@ -1427,6 +1455,9 @@ footer .footer_image img{
 		font-size: 34px;
 		 line-height: 40px;
 	}
+	.form_wrapper{
+		padding: 50px 0 50px 0;
+	}
 	.form_wrapper p.description{
 		font-size: 16px;
 		line-height: 23px;
@@ -1434,6 +1465,9 @@ footer .footer_image img{
 	.form_wrapper .newsetter-box form input[type="submit"] {
 		font-size: 16px;
 		line-height: 24px;
+	}
+	.signup_wrapper{
+		padding: 60px 0 60px 0;
 	}
 }
 
@@ -1448,19 +1482,38 @@ footer .footer_image img{
 	}
 	.card_text img {
 		width: 24px;
-    	margin-left: 15px;
+		margin-left: 6px;
+	}
+	h6.card-title {
+		font-size: 17px;
+		line-height: 24px;
+	}
+	.springwrapper .text_box {
+		padding-top: 45px;
+		margin-left: 22%;
+		padding-right: 40px;
 	}	 
 }
 @media(min-width: 768px) and (max-width: 900px){
+	.homesection .text_box {
+		padding-top: 78px;
+	}
+	.springwrapper{
+		max-height: 590px;
+	}
 	.card_wrapper{
 		margin-left: -60px;
 		padding: 0;
 		width: 120%;
-	} 
+	}
+	.card .card_text{
+		padding: 10px 6px;
+		justify-content: center;
+	}  
 	.springwrapper .text_box {
 		padding-top: 45px;
 		margin-left: 0;
-		padding-right: 40px;
+		padding-right: 85px;
 	}
 	.cart_wrapper .featured .cart-box {
 		padding: 60px 40px;
@@ -1477,9 +1530,5 @@ footer .footer_image img{
 		margin-left: 12px;
 	}
 }	
-@media (max-width: 1024px){
-	.card_wrapper .card {
-		max-width: 300px;
-	}
-}
+
 
