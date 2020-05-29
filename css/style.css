@@ -1529,6 +1529,9 @@ footer .footer_image img{
 		left: 0;
 		margin-left: 12px;
 	}
+	.cart_wrapper .cart_footer {
+		padding-top: 22px;
+	}
 }	
 
 
