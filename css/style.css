@@ -115,7 +115,7 @@ h5.text_content{
 }
  .text_container .image_box  {	
 	width: 135%;
-	margin-left: -65px;
+	margin-left: -74px;
 }
 .springwrapper .text_box {
 	padding-top: 45px;
@@ -733,7 +733,7 @@ footer .footer_image img{
 		text-align: center;
 	}
 	.homesection .text_box {
-		padding-right: 10px;
+		padding-right: 16px;
 		width: 450px;
 		margin: 0 auto;
 		padding-top: 16px;
@@ -824,7 +824,7 @@ footer .footer_image img{
 	.dashboard_wrap_list h6.dashboard_title {
 		font-size: 18px;
 		line-height: 22px;
-		margin-left: 38px;
+		margin-left: 42px;
 		margin-bottom: 8px;
 	}
 	.dashboard_top h4.title_wrapper {
@@ -834,7 +834,7 @@ footer .footer_image img{
 	.dashboard_wrap_list p.description {
 		font-size: 14px;
 		line-height: 22px;
-		margin-left: 38px;
+		margin-left: 42px;
 		margin-bottom: 0;
 	}
 	.dashboard_wrap_list .dashboard_icon {
@@ -1256,7 +1256,7 @@ footer .footer_image img{
 	.dashboard_wrap_list h6.dashboard_title {
 		font-size: 19px;
 		line-height: 23px;
-		margin-left: 40px;
+		margin-left: 48px;
 		margin-bottom: 8px;
 	}
 	.dashboard_wrap_list .dashboard_icon {
@@ -1268,7 +1268,7 @@ footer .footer_image img{
 	}
 	.dashboard_wrap_list p.description {
 		color: #E1E9F0;
-		margin-left: 40px;
+		margin-left: 48px;
 		font-size: 16px;
 		line-height: 22px;
 	}
