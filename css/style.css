@@ -733,7 +733,8 @@ footer .footer_image img{
 		text-align: center;
 	}
 	.homesection .text_box {
-		padding-right: 16px;
+		padding-right: 0;
+		padding-left: 0;
 		width: 450px;
 		margin: 0 auto;
 		padding-top: 16px;
