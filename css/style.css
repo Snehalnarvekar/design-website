@@ -115,7 +115,7 @@ h5.text_content{
 }
  .text_container .image_box  {	
 	width: 135%;
-	margin-left: -74px;
+	margin-left:-18%;
 }
 .springwrapper .text_box {
 	padding-top: 45px;
@@ -1175,8 +1175,8 @@ footer .footer_image img{
 		margin: 0;
 	}
 	.text_container .image_box {
-		width: 120%;
-		margin-left: -70px;
+		width: 128%;
+		margin-left: -28%;
 	}
 	h5.text_content{
 		font-size: 23px;
@@ -1361,7 +1361,6 @@ footer .footer_image img{
 	}
 	.client_wrapper .grid-container {
 		grid-gap: 30px 10px;
-		margin-left: -20px;
 	}	
 	.client_wrapper .grid-items{
 		text-align: center;
@@ -1538,6 +1537,9 @@ footer .footer_image img{
 	}
 	.client_wrapper img.kyan{
 		width: 120px;
+	}
+	.client_wrapper .grid-container {
+		margin-left: -20px;
 	}
 }	
 
