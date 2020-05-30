@@ -32,20 +32,26 @@ a:hover {
 	margin-right: auto;
 	margin-left: auto;
 }
-.homesection {
-	background-color:	 #FFF9EA;
+div.homesection {
+	background-color:#FFF9EA;
 	background-image: url(../svg/bg-svg-img.svg);
-    padding-bottom: 125px;
+    padding-bottom: 123px;
 	background-position: right top;
 	background-repeat: no-repeat;
-	background-size: 72%;
+	background-size: 71%;
+}
+.homesection .container{
+	max-width: 1140px;
 }
 nav.navbar{
 	padding: 38px 0 10px 0;
 	margin-bottom: 50px;
 }
 a.navbar-brand{
-	max-width: 245px;
+	max-width: 243px;
+}
+.navbar-expand-md .navbar-nav {
+	margin-left: 5px;
 }
 nav .navbar-brand{
 	text-align: left;
@@ -61,8 +67,17 @@ nav.navbar .navbar-nav .nav-link {
 	font-weight: 400;
 	line-height: 25px;
     text-align: left;
-    margin-top: 0px;
+	margin-top: 0px;
+	padding-right: 0;
     text-decoration: none;
+}
+.text_container .left{
+	width: 51%;
+	float: left;
+}
+.text_container .right{
+	width: 44%;
+	float: left;
 }
 .text_button a{
     border-radius: 20px;
@@ -77,6 +92,11 @@ nav.navbar .navbar-nav .nav-link {
 	color: #FFFFFF;
 	border-color: #FF7900;
 }
+.btn-positive:focus,
+.btn-positive:hover{
+	box-shadow: 1px 1px 10px 0 rgba(255, 121, 0, 0.6);
+	transition: 0.3s all ease-in-out;
+}
 .head_wrapper .text_button a.btn-positive{
 	padding: 7px 23px;
 }
@@ -88,14 +108,13 @@ nav.navbar .navbar-nav .nav-link {
     flex-wrap: wrap;
 }
 .homesection .text_box{
-	padding-right: 80px;
-	padding-top: 165px;
+	padding-right: 0;
+	padding-top: 152px;
 }
  h1.text_title{
 	color: #593A30;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 600;
-	font-style: normal;
 	font-size: 70px;
 	line-height: 75px;
 	text-align: left;
@@ -114,8 +133,8 @@ h5.text_content{
 	padding-bottom: 40px;
 }
  .text_container .image_box  {	
-	width: 135%;
-	margin-left:-18%;
+	margin-right: -112px;
+	margin-left: 15px;
 }
 .springwrapper .text_box {
 	padding-top: 45px;
@@ -192,6 +211,11 @@ p.description{
 	color: #FF7900;
 	border-color:#FFF0E1;
 }
+.btn-viewallraffle:focus,
+.btn-viewallraffle:hover{
+	box-shadow: 1px 1px 10px 0 rgba(255, 121, 0, 0.6);
+	transition: 0.3s all ease-in-out;
+}
 .dashboard_wrapper{
 	background-color: #2B2B2B;
 	padding: 80px 0 20px;
@@ -251,9 +275,6 @@ h2{
 }
 .createwrapper .create_content{
 	padding: 100px 0 100px 0;
-}
-.createwrapper .create_wrap_img{
-	width: 85%;
 }
 .createwrapper .create_wrap_text{
 	padding-left: 100px;
@@ -423,6 +444,7 @@ p{
     background: #FFFFFF;
 	text-align: center;
 	max-width: 42%;
+	width: 100%;
 	position: relative;
 	overflow: hidden;
 }
@@ -582,6 +604,7 @@ p{
 }
 .newsetter-box form input[type="email"] {
 	border: 0;
+	outline: none;
 	padding: 4px 8px;
 	width: calc(100% - 100px);
 	color: #D7C495;
@@ -677,9 +700,11 @@ footer .footer_image img{
 	float: right;
 	max-width: 50px;
 }	
-
+footer .social-media li.text_button {
+    padding-right: 0;
+}
 @media (max-width: 767px){
-	.homesection {
+	div.homesection {
 		padding-bottom: 42px;
 		background-size: 100%;
 	}
@@ -713,6 +738,11 @@ footer .footer_image img{
 	.container{
 		max-width: 600px;
 	}
+	.text_container .right,
+	.text_container .left {
+		width: 100%;
+		padding: 0;
+	}
 	h1.text_title{
 		font-size: 35px;
 		line-height: 46px;
@@ -733,19 +763,19 @@ footer .footer_image img{
 		text-align: center;
 	}
 	.homesection .text_box {
-		padding-right: 0;
-		padding-left: 0;
-		width: 450px;
+		max-width: 450px;
 		margin: 0 auto;
-		padding-top: 16px;
+		padding-top: 15px;
 	}
 	.homesection .text_container {
 		position: relative;
 	}
 	.text_container .image_box {
-		width: 100%;
+		max-width: 450px;
 		margin-left: 0;
+		margin-right: 0;
 		margin: 0 auto;
+		padding: 0 10px;
 	}
 	.springwrapper {
 		padding-top: 40px;
@@ -1155,7 +1185,7 @@ footer .footer_image img{
 		margin-bottom: 20px;
 	}
 	nav.navbar .navbar-nav .nav-item {
-		padding-left: 0;
+		padding-left: 10px;
 	}	
 	a.navbar-brand{
 		max-width:190px;
@@ -1176,8 +1206,8 @@ footer .footer_image img{
 		margin: 0;
 	}
 	.text_container .image_box {
-		width: 128%;
-		margin-left: -28%;
+		margin-right: -30px;
+    	 margin-left: 0;
 	}
 	h5.text_content{
 		font-size: 23px;
@@ -1194,7 +1224,8 @@ footer .footer_image img{
 	}
 	.homesection .text_box {
 		padding-top: 110px;
-		padding-right: 70px;
+		padding-right: 60px;
+		margin-left: 20px;
 	}
 	.menu_wrapper .image_box  {	
 		padding-right: 10px;
@@ -1488,10 +1519,6 @@ footer .footer_image img{
 		width: 24px;
 		margin-left: 6px;
 	}
-	h6.card-title {
-		font-size: 17px;
-		line-height: 24px;
-	}
 	.springwrapper .text_box {
 		padding-top: 45px;
 		margin-left: 22%;
@@ -1501,6 +1528,8 @@ footer .footer_image img{
 @media(min-width: 768px) and (max-width: 900px){
 	.homesection .text_box {
 		padding-top: 78px;
+		padding-right: 10px;
+    	margin-left: 15px;
 	}
 	.springwrapper{
 		max-height: 590px;
@@ -1543,5 +1572,4 @@ footer .footer_image img{
 		margin-left: -20px;
 	}
 }	
-
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>221B3DC0-140E-4F3D-ADE9-CB4D4F459575</title>
+    <defs>
+        <linearGradient x1="111.172349%" y1="50%" x2="-11.2651423%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#B332FF" offset="0%"></stop>
+            <stop stop-color="#E02020" offset="51.2583893%"></stop>
+            <stop stop-color="#F7B500" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Visual-Design---Raffle" transform="translate(-1129.000000, -322.000000)" fill="url(#linearGradient-1)">
+            <g id="Cover-5" transform="translate(0.000000, -10.000000)">
+                <g id="Group-4" transform="translate(247.000000, 276.000000)">
+                    <g id="Group">
+                        <g id="Social-Network/Instagram" transform="translate(882.000000, 56.000000)">
+                            <path d="M21,0 C25.9705627,0 30,4.02943725 30,9 L30,21 C30,25.9705627 25.9705627,30 21,30 L9,30 C4.02943725,30 0,25.9705627 0,21 L0,9 C0,4.02943725 4.02943725,0 9,0 L21,0 Z M15,7.5 C10.86375,7.5 7.5,10.86375 7.5,15 C7.5,19.13625 10.86375,22.5 15,22.5 C19.13625,22.5 22.5,19.13625 22.5,15 C22.5,10.86375 19.13625,7.5 15,7.5 Z M24,4.5 C23.25,4.5 22.5,5.25 22.5,6 C22.5,6.75 23.25,7.5 24,7.5 C24.75,7.5 25.5,6.75 25.5,6 C25.5,5.25 24.75,4.5 24,4.5 Z M15,10.5 C12.5147186,10.5 10.5,12.5147186 10.5,15 C10.5,17.4852814 12.5147186,19.5 15,19.5 C17.4852814,19.5 19.5,17.4852814 19.5,15 C19.5,12.5147186 17.4852814,10.5 15,10.5 Z" id="Instagram"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
