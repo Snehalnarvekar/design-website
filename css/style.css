@@ -211,8 +211,8 @@ p.description{
 	color: #FF7900;
 	border-color:#FFF0E1;
 }
-.btn-viewallraffle:focus,
-.btn-viewallraffle:hover{
+.btn-viewraffle:focus,
+.btn-viewraffle:hover{
 	box-shadow: 1px 1px 10px 0 rgba(255, 121, 0, 0.6);
 	transition: 0.3s all ease-in-out;
 }
@@ -295,6 +295,11 @@ h2{
 }
 .createwrapper .text_button .btn-viewallraffle{
 	color:#FF7900;
+}
+.btn-signup:focus,
+.btn-signup:hover{
+	box-shadow: 1px 1px 10px 0 rgba(255, 121, 0, 0.6);
+	transition: 0.3s all ease-in-out;
 }
 h3{
 	position: relative;
