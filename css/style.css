@@ -880,10 +880,12 @@ footer .social-media li.text_button {
 		max-width: 400px;
 		margin: 0 auto 40px auto;
 	}
-	.createwrapper h2.title-wrapper {
-		padding-bottom:20px;
+	h2{
 		font-size: 30px;
 		line-height: 36px;
+	}
+	.createwrapper h2.title-wrapper {
+		padding-bottom:20px;
 		margin-bottom: 0;
 		max-width: 100%;
 		text-align: center;
@@ -979,8 +981,6 @@ footer .social-media li.text_button {
 	}
 	.cart_wrapper h2 {
 		margin-bottom: 10px;
-		font-size: 30px;
-		line-height: 36px;
 	}
 	.top-title {
 		font-size: 12px;
@@ -1310,10 +1310,12 @@ footer .social-media li.text_button {
 	.createwrapper .create_wrap_text {
 		padding-left: 20px;
 	}
-	.createwrapper h2.title-wrapper {
-		padding-bottom: 20px;
+	h2{
 		font-size: 36px;
 		line-height: 48px;
+	}
+	.createwrapper .title-wrapper {
+		padding-bottom: 20px;
 		margin-bottom: 0;
 	}
 	.createwrapper .create_content {
@@ -1335,8 +1337,6 @@ footer .social-media li.text_button {
 		padding: 25px 10px;
 	}
 	.cart_wrapper h2 {
-		font-size: 36px;
-		line-height: 48px;
 		margin-bottom: 18px;
 	}
 	.cart_wrapper ul li p{
@@ -1526,7 +1526,7 @@ footer .social-media li.text_button {
 	}
 	.springwrapper .text_box {
 		padding-top: 45px;
-		margin-left: 22%;
+		margin-left: 10%;
 		padding-right: 40px;
 	}	 
 }
