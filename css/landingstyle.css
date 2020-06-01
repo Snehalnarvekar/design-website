@@ -14,6 +14,7 @@
     background: #FFFFFF;
     position: absolute;
     top: 80px;
+    right: 10px;
     width: 100%;
     max-width: 350px;
     padding: 20px;
@@ -520,13 +521,6 @@ footer{
     padding-bottom: 0;
 }
 
-@media(max-width: 440px){
-    .service_header .left{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
 @media (max-width: 767px){
     .landing_menu_wrapper .nav-logo img {
         max-width: 32px;
@@ -540,7 +534,7 @@ footer{
         padding-bottom: 40px;
     }
     .landing_menu_wrapper #navbarSupportedContent {
-        top: 69px;
+        top: 60px;
     } 
     .landing_menu_wrapper nav.navbar .nav_menu_wrpper{
         padding: 6px 10px 7px 10px;
@@ -548,6 +542,9 @@ footer{
     .service_header .left img {
         max-width: 80px;
         margin-right: 0;
+    }
+    .puma_service_box{
+        margin-top: 50px;
     }
     .service_header .left {
         font-size: 18px;
@@ -586,7 +583,7 @@ footer{
         text-align: center;
     }
     .about_wrapper {
-        padding-top: 700px;
+        padding-top: 560px;
         padding-bottom: 60px;
     }
     .about_wrapper .container {
@@ -629,6 +626,9 @@ footer{
     .white_box_wrapper h2 {
         font-size: 60px;
         line-height: 60px;
+    }
+    .box_wrap .right{
+        padding-top: 20px;
     }
     .white_box_wrapper .white-box sup {
         font-size: 18px;
@@ -755,7 +755,7 @@ footer{
         max-height: 430px;
     }
     .landing_menu_wrapper #navbarSupportedContent {
-        top: 50px;
+        top: 70px;
     } 
     .landing_menu_wrapper nav.navbar .nav_menu_wrpper{
         padding: 10px 19px 9px 13px;
@@ -904,10 +904,10 @@ footer{
         overflow: hidden;
     }
 }
-@media(max-width: 485px){
+@media(max-width: 480px){
     .milestones_wrapper ul {
         flex-direction: column;
-        padding-left: 50px;
+        padding-left: 40px;
     }
     .milestones_wrapper ul h4{
         padding-left: 45px;
@@ -916,7 +916,32 @@ footer{
         padding-left: 45px;
     }
 }
-
+@media(max-width: 440px){
+    .service_header .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about_wrapper .white-box .form-group {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about_wrapper .white-box .input_content, 
+    .about_wrapper .white-box .text_button {
+        width: 100%;
+        margin: 0;
+    }    
+    .about_wrapper .white-box .input_content{
+        margin-bottom: 20px;
+    }
+    .about_wrapper .white-box .text_button {
+        margin-bottom: 10px;
+        text-align: center;
+    }    
+    .white-box .text_button a.btn-positive {
+        width: 100%;
+    }
+}
 
 
 
