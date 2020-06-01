@@ -216,7 +216,7 @@
         <div class="rules_wrapper">
             <div class="container">
                 <h4 class="title_wrapper">Rules
-                    <img src="images/chevron_icon.svg" alt="raffle icon">
+                    <img src="images/chevron_icon.svg" alt="raffle icon" id="chevron_down_icon">
                 </h4> 
                 <div class="list_content">
                     <div class="row">
@@ -363,13 +363,14 @@
 				    dots:true,
                     responsive:{
                         0:{
-                            items:2
-                        },
-                        768:{
                             items:1
                         },
-                        1025:{
+                        768:{
                             items:2
+                        },
+                        1025:{
+                            items:2,
+                            margin:16
                         }
                     }
                 });
