@@ -70,6 +70,7 @@ nav.navbar {
     padding: 15px 34px 16px 26px;
     align-items: center;
     margin-left: auto;
+    margin-right: 20px;
 }
 .puma_wrapper{
     
@@ -88,9 +89,9 @@ nav.navbar {
     background: #FFFFFF;
     border-radius: 40px 0 40px 0;
     overflow: hidden;
-    width: 100%;
-    float: left;
-    margin-top: 193px;
+    width: 96%;
+    float: right;
+    margin-top: 180px;
     box-shadow: 0 2px 44px 0 rgba(0, 0, 0, 0.07);
 }
  .service_header{
@@ -137,7 +138,7 @@ nav.navbar {
     margin-left: 0px;
 }
 .puma_service_box .service_body{
-    padding: 50px 65px 60px 65px;
+    padding: 49px 98px 60px 98px;
     width: 100%;
 }
 .service_content {
@@ -158,11 +159,11 @@ nav.navbar {
     padding-bottom: 40px;
 }
 .service_content .text_button a.btn-positive {
-    padding: 7px 37px;
+    padding: 6px 37px;
 }
 .about_wrapper{
     background: #FFF9EA;
-    padding-top: 700px;
+    padding-top: 750px;
     padding-bottom: 129px;
 }
 .aglc_content{
@@ -274,7 +275,7 @@ nav.navbar {
     margin-bottom: 10px;
 }
 .white-box .text_button a.btn-positive {
-    padding: 7px 37px;
+    padding: 7px 40px;
 }
 .about_wrapper .white-box .input_content {
     width: 51%;
@@ -359,6 +360,9 @@ nav.navbar {
 .milestones_wrapper ul h4{
     color: #3A2315;
     font-size: 36px;
+    line-height: 40px;
+    font-family: 'Lato',sans-serif;
+    font-weight: 600;
     padding-left: 59px;
 
 }
@@ -377,6 +381,11 @@ nav.navbar {
     padding: 8px 45px;
     color: #FF7900;
     border-color: #FFF0E1;
+}
+.btn-buynow:focus,
+.btn-buynow:hover{
+	box-shadow: 1px 1px 10px 0 rgba(255, 121, 0, 0.6);
+	transition: 0.3s all ease-in-out;
 }
 .milestones_wrapper .text_button{
     text-align: center;
@@ -440,17 +449,17 @@ h4.title_wrapper{
     justify-content: center;
     content: counters(item, ".");
     counter-increment: item;
-    top: 0;
+    top: 4px;
     left: -45px;
     z-index: 2;
     background-color: #FFEA9E;
     border-radius: 100%;
     width: 30px;
     height: 30px;
-    /* min-width: 30px;
+    min-width: 30px;
     min-height: 30px;
     max-width: 30px;
-    max-height: 30px; */
+    max-height: 30px;
     color: #304659;
     font-family: 'Lato',sans-serif;
     font-size: 15px;
@@ -590,7 +599,7 @@ footer{
         text-align: center;
     }
     .about_wrapper {
-        padding-top: 560px;
+        padding-top: 600px;
         padding-bottom: 60px;
     }
     .about_wrapper .container {
@@ -652,7 +661,7 @@ footer{
         width: 35%;
     }
     .aglc_menu_wrap {
-        padding: 55px 0 20px 0;
+        padding: 30px 0 20px 0;
         align-items: center;
     }
     .milestones_wrapper {
@@ -695,7 +704,7 @@ footer{
     }
     .rules_wrapper .list_content {
         padding: 0;
-        padding-top: 30px;
+        padding-top: 20px;
     }
     .rules_wrapper .list_content ul {
         column-count: 1;
@@ -710,6 +719,9 @@ footer{
     .rules_wrapper img {
         width: 14px;
         margin-left: 10px;
+    }
+    .list_menu_wrap{
+        padding-left: 10px;
     }
     .update_wrapper {
         padding: 40px 0 40px 0;
@@ -853,7 +865,7 @@ footer{
         margin-left: 16px;
     }
     .update_wrapper {
-        padding: 40px 0 50px ;
+        padding: 40px 0 40px ;
     }
     .testimonial_box p {
         font-size: 17px;
@@ -914,7 +926,7 @@ footer{
 @media(max-width: 480px){
     .milestones_wrapper ul {
         flex-direction: column;
-        padding-left: 40px;
+        align-items: center;
     }
     .milestones_wrapper ul h4{
         padding-left: 45px;

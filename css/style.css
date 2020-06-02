@@ -32,7 +32,7 @@ a:hover {
 	margin-right: auto;
 	margin-left: auto;
 }
-div.homesection {
+.homesection {
 	background-color:#FFF9EA;
 	background-image: url(../svg/bg-svg-img.svg);
     padding-bottom: 123px;
@@ -709,7 +709,7 @@ footer .social-media li.text_button {
     padding-right: 0;
 }
 @media (max-width: 767px){
-	div.homesection {
+	.homesection {
 		padding-bottom: 42px;
 		background-size: 100%;
 	}

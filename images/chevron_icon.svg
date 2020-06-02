@@ -1,5 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="#3A2315" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"/></svg>
-<!--
-Font Awesome Pro 5.2.0 by @fontawesome - https://fontawesome.com
-License - https://fontawesome.com/license (Commercial License)
--->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="12px" viewBox="0 0 20 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>4477B113-7DD0-4A55-AE94-31C7D9B78441</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Visual-Design---Raffle" transform="translate(-257.000000, -2788.000000)" fill="#304659">
+            <g id="Content-11-Copy" transform="translate(0.000000, 2708.000000)">
+                <g id="Left-column" transform="translate(149.000000, 60.000000)">
+                    <g id="Icon/Arrow" transform="translate(118.000000, 24.000000) rotate(90.000000) translate(-118.000000, -24.000000) translate(108.000000, 14.000000)">
+                        <polygon id="Border" points="17.4 10 7.43574773 20 6 18.560273 14.5925779 9.97727668 6.02274868 1.41700371 7.43574773 -3.55271368e-15"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
