@@ -41,6 +41,7 @@
             </div> 
         </div>
 
+
         <div class="filter_wrapper"> 
             <div class="container">
                 <div class="inner_content">
@@ -52,18 +53,98 @@
                         </div>
                         <div class="right">
                             <span>
-                                <input type="text" id="filter" placeholder="Filters" >
-                                <label class="checkbox__container">Show closed raffles
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark"></span>
-                                </label>
+                                <input type="text" id="filterbox" placeholder="Filters" readonly>
+                                <div class="filter_menu_wrap">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="label">Sort by</label>
+                                            <label class="radio_content">Date
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="radio_content">Price
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="radio_content">Provice
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="radio_content">Popularity
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            <div class="tab_wrapper">
+                                                <label class="label">Time</label>
+                                                <nav>
+                                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                      <a class="nav-item nav-link" id="this-week-tab" data-toggle="tab" href="#this-week" role="tab" aria-controls="this-week" aria-selected="true">This week</a>
+                                                      <a class="nav-item nav-link active" id="next-week-tab" data-toggle="tab" href="#next-week" role="tab" aria-controls="next-week" aria-selected="false">Next week</a>
+                                                      <a class="nav-item nav-link" id="next-month-tab" data-toggle="tab" href="#next-month" role="tab" aria-controls="next-month" aria-selected="false">Next month</a>
+                                                    </div>
+                                                  </nav>
+                                                  <div class="tab-content" id="nav-tabContent">
+                                                    <div class="tab-pane fade show active" id="this-week" role="tabpanel" aria-labelledby="this-week-tab">
+                                                      This week</div>
+                                                    <div class="tab-pane fade" id="next-week" role="tabpanel" aria-labelledby="next-week-tab">
+                                                      Next week </div>
+                                                    <div class="tab-pane fade" id="next-month" role="tabpanel" aria-labelledby="next-month-tab">
+                                                      Next month </div>
+                                                  </div>
+                                            </div>
+
+                                            <div class="price_range_wrap">
+                                                <label  class="label">Raffle price range</label>
+                                                <div id="slider"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="label">Sort by</label>
+                                            <div class="checkbox_wrapper">
+                                                <label class="checkbox_content">Ohio
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="checkbox_content">Texas
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="checkbox_content">Kansas
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="checkbox_content">Baskerville
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="checkbox_content">Oklahama
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="checkbox_content">New York
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="text_button">
+                                                <a href="" class="btn btn-positive ">Save filters</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            
+                            </span>    
+                            <label class="checkbox_content">Show closed raffles
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>  
+                            </label>
                         </div>
                     </form>
                 </div>
             </div>            
         </div>
-         
-        
         <div class="raffle_section">
             <div class="container">
                 <div class="active_raffle">
