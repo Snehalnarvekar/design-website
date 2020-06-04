@@ -7,9 +7,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
         <link rel="stylesheet" href="css/style.css"> 
-        <link rel="stylesheet" href="css/style2.css">
     </head>
 
     <body class="raffle_page">
@@ -42,26 +41,324 @@
             </div> 
         </div>
 
-        <div class="raffle_main">
+        <div class="filter_wrapper"> 
             <div class="container">
-                <div class="inner_wrap_content">
+                <div class="inner_content">
                     <h2>All Raffles</h2>
                     <form>
                         <div class="left">
                             <label for="">Search for</label>
                             <input type="text" value="Spri">
                         </div>
-                        
-
-
-
-
+                        <div class="right">
+                            <span>
+                                <input type="text" id="filter" placeholder="Filters" >
+                                <label class="checkbox__container">Show closed raffles
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                        </div>
+                    </form>
+                </div>
+            </div>            
         </div>
-
-
-
-
-
-
+         
+        
+        <div class="raffle_section">
+            <div class="container">
+                <div class="active_raffle">
+                    <h4 class="title_wrapper">Active Raffles</h4>
+                    <div class="card_wrapper">
+                        <div class="card-columns">
+                            <div class=" card">
+                                <div class="card_header">
+                                    <div class="card_image">
+                                        <div class="clock_label"><i class="far fa-clock"></i> 31 May 2020</div>
+                                        <img src="images/rafflecard_1.png" alt="card-image">
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <h6 class="card-title">Spring season fundraising<i class="fas fa-chevron-right"></i>
+                                    </h6>
+                                    <div class="card_footer">
+                                        <p>Your support of Fall Lottery makes it possible to provide an exceptional standard of care for thousands…</p>
+                                        <div class="">
+                                            <span class="card_price">$50+</span>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_image">
+                                        <div class="clock_label"><i class="far fa-clock"></i> 31 May 2020</div>
+                                        <img src="images/rafflecard_4.png" alt="card-image">
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <h6 class="card-title">Spring season fundraising<i class="fas fa-chevron-right"></i>
+                                    </h6>
+                                    <div class="card_footer">
+                                        <p>Your support of Fall Lottery makes it possible to provide an exceptional standard of care for thousands…</p>
+                                        <div class="">
+                                            <span class="card_price">$50+</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_image">
+                                        <div class="clock_label"><i class="far fa-clock"></i> 31 May 2020</div>
+                                        <img src="images/rafflecard_7.png" alt="card-image">
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <h6 class="card-title">Spring season fundraising<i class="fas fa-chevron-right"></i>
+                                    </h6>
+                                    <div class="card_footer">
+                                        <p>Your support of Fall Lottery makes it possible to provide an exceptional standard of care for thousands…</p>
+                                        <div class="">
+                                            <span class="card_price">$50+</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_image">
+                                        <div class="clock_label"><i class="far fa-clock"></i> 31 May 2020</div>
+                                        <img src="images/rafflecard_2.png" alt="card-image">
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <h6 class="card-title">Spring season fundraising<i class="fas fa-chevron-right"></i>
+                                    </h6>
+                                    <div class="card_footer">
+                                        <p>Your support of Fall Lottery makes it possible to provide an exceptional standard of care for thousands…</p>
+                                        <div class="">
+                                            <span class="card_price">$50+</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_image">
+                                        <div class="clock_label"><i class="far fa-clock"></i> 31 May 2020</div>
+                                        <img src="images/rafflecard_5.png" alt="card-image">
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <h6 class="card-title">Spring season fundraising<i class="fas fa-chevron-right"></i>
+                                    </h6>
+                                    <div class="card_footer">
+                                        <p>Your support of Fall Lottery makes it possible to provide an exceptional standard of care for thousands…</p>
+                                        <div class="">
+                                            <span class="card_price">$50+</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_image">
+                                        <div class="clock_label"><i class="far fa-clock"></i> 31 May 2020</div>
+                                        <img src="images/rafflecard_8.png" alt="card-image">
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <h6 class="card-title">Spring season fundraising<i class="fas fa-chevron-right"></i>
+                                    </h6>
+                                    <div class="card_footer">
+                                        <p>Your support of Fall Lottery makes it possible to provide an exceptional standard of care for thousands…</p>
+                                        <div class="">
+                                            <span class="card_price">$50+</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_image">
+                                        <div class="clock_label"><i class="far fa-clock"></i> 31 May 2020</div>
+                                        <img src="images/rafflecard_3.png" alt="card-image">
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <h6 class="card-title">Spring season fundraising<i class="fas fa-chevron-right"></i>
+                                    </h6>
+                                    <div class="card_footer">
+                                        <p>Your support of Fall Lottery makes it possible to provide an exceptional standard of care for thousands…</p>
+                                        <div class="">
+                                            <span class="card_price">$50+</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="card_image">
+                                        <div class="clock_label"><i class="far fa-clock"></i> 31 May 2020</div>
+                                        <img src="images/rafflecard_6.png" alt="card-image">
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <h6 class="card-title">Spring season fundraising<i class="fas fa-chevron-right"></i>
+                                    </h6>
+                                    <div class="card_footer">
+                                        <p>Your support of Fall Lottery makes it possible to provide an exceptional standard of care for thousands…</p>
+                                        <div class="">
+                                            <span class="card_price">$50+</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="closed_raffle">
+                    <h4 class="title_wrapper">Closed Raffles</h4>
+                    <div class="card_wrapper">
+                        <div class="card-columns">
+                            <div class=" card">
+                                <div class="card_header">
+                                    <div class="card_image">
+                                        <div class="clock_label closed"><i class="fas fa-ban"></i> Closed</div>
+                                        <img src="images/closed_raffle.png" alt="card-image">
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <h6 class="card-title">Uranium cleaning fundraising <i class="fas fa-chevron-right"></i>
+                                    </h6>
+                                    <div class="card_footer">
+                                        <p>Your support of Fall Lottery makes it possible to provide an exceptional standard of care for thousands…</p>
+                                        <div class="closed_wrap">
+                                            <span class="card_price">$50+</span>
+                                            <span class="card_date">Ended on 15 Apr 2020</span>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination_wrapper">
+                    <ul class="pagination ">
+                        <li class="page-item">
+                            <button class="btn btn-round btn-pink btn-disabled"><i class="fa fa-angle-double-left"></i></button>
+                        </li>
+                        <li class="page-item page"><a href="">1</a></li>
+                        <li class="page-item">
+                            <button class="btn btn-round btn-pink"><i class="fa fa-angle-double-right"></i></button>
+                        </li>
+                </div>               
+            </div> 
+        </div>
+        <div class="client_wrapper"> 
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-5">
+                        <p class="description">We have customers across the globe. 
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+                    <div class="col-md-7 client_wrap_icon">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img  class="fossa" src="images/fossa.png" alt="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="asgardia" src="images/asgardia.png" alt="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="kanba" src="images/kanba.png" alt="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="aven" src="images/aven.png" alt="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="kyan" src="images/kyan.png" alt="">
+                            </div>
+                            <div class="grid-item">
+                                <img class="velocity" src="images/velocity-9.png" alt="">
+                            </div>
+                        </div>
+                    </div>       
+                </div> 
+            </div>
+        </div>          
+        <div class="signup_wrapper">
+            <div class="row justify-content-center">
+                <div class="col-xl-8  text-center">
+                    <h4  class="title_wrapper">Ready to sign up and create raffles?</h4>
+                    <div class="text_button">
+                    <a href="" class="btn btn-viewraffle">Yes!</a>
+                    </div>
+                </div>  
+            </div>
+        </div>  
+        <footer>       
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <ul class="footerlink"> 
+                                <li><a href="https://github.com/twbs/bootstrap">Support</a></li>
+                                <li><a href="https://twitter.com/getbootstrap">FAQ</a></li>
+                                <li><a href="/examples/">Privacy policy</a></li>
+                                <li><a href="/about/history/">Terms</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="social-media">
+                                <li>
+                                    <img src="svg/Facebook.svg" alt="charity-media-icon">
+                                </li>
+                                <li>
+                                    <img src="svg/Linkedin.svg" alt="charity-media-icon">
+                                </li>
+                                <li>
+                                    <img src="svg/GitHub.svg" alt="charity-media-icon">
+                                </li>
+                                <li>
+                                    <img src="svg/Twitter.svg" alt="charity-media-icon">
+                                </li>
+                                <li>
+                                    <img src="svg/Instagram.svg" alt="charity-media-icon"> 
+                                </li>
+                                <li class="text_button">
+                                    <a href="" class="btn btn-footer">View all raffles</a>
+                                </li>
+                            </ul> 
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="copy_right_text" >
+                <div class="container">
+                    <div class="footer_border"></div>
+                    <div class="row align-items-center">
+                        <div class="copyright col-md-6" >
+                            <p> © 2020 
+                                <strong>
+                                    <span>Charity5050</span>
+                                </strong> 
+                                .All rights reserved.</p>
+                        </div>
+                        <div class="footer_image col-md-6">
+                            <img src="images/footer-image.png" alt="">
+                        </div> 
+                    </div>
+                </div> 
+            </div> 
+        </footer> 
+    
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="js/smooth-scroll.polyfills.min.js"></script>
     </body>
-</html>            
+</html>        

@@ -5,8 +5,7 @@
 .landing_menu_wrapper{
     background-image:url(../images/landing_img.png);
     padding-bottom: 0;
-    
-    max-height: 500px;
+    height: 500px;
     background-position: 100% 100%;
     background-size: cover;
 }
@@ -26,7 +25,7 @@ nav.navbar {
     margin-bottom:0; 
     margin-top: 0;
 }
-.landing_menu_wrapper nav.navbar
+ nav.navbar
  .navbar-nav .nav-item {
     padding-left: 0px;
     padding-bottom: 15px;
@@ -35,18 +34,18 @@ nav.navbar {
     max-width: 35px;
     margin-right: 15px;
 }
-.landing_menu_wrapper .navbar-toggler{
+ 
+.landing_menu_wrapper .menu_wrap{
+    position: relative;
+    width: 100%;
+    z-index: 3;
+}
+.landing_menu_wrapper nav.navbar .navbar-toggler {
     border: none;
     outline: none;
     display: flex;
     align-items: center;
     padding: 0;
-}
-.landing_menu_wrapper{
-
-    width: 100%;
-    z-index: 3;
-    float: left;
 }
 .toggle_button span{
     background-color: #2C2C2C; 
@@ -63,7 +62,7 @@ nav.navbar {
 .toggle_button span:nth-child(2) {
     width: 75%;
 }
-.landing_menu_wrapper nav.navbar .nav_menu_wrpper{
+ .landing_menu_wrapper .nav_menu_wrpper{
     background-color: rgba(255, 255, 255, 0.56);
     border-radius: 0 0 10px 10px;
     display: flex;
@@ -71,11 +70,6 @@ nav.navbar {
     align-items: center;
     margin-left: auto;
     margin-right: 20px;
-}
-.puma_wrapper{
-    
-    z-index: 3;
-    width: 100%;
 }
 .puma_wrap_content .left span {
     margin-bottom: -10px;
@@ -85,13 +79,13 @@ nav.navbar {
     width: 100%;
     margin: 0 auto;
 }
-.puma_service_box{
+ .puma_service_box{
     background: #FFFFFF;
     border-radius: 40px 0 40px 0;
     overflow: hidden;
-    width: 96%;
+    width: 100%;
     float: right;
-    margin-top: 180px;
+    margin-top: 190px;
     box-shadow: 0 2px 44px 0 rgba(0, 0, 0, 0.07);
 }
  .service_header{
@@ -163,7 +157,7 @@ nav.navbar {
 }
 .about_wrapper{
     background: #FFF9EA;
-    padding-top: 750px;
+    padding-top: 250px;
     padding-bottom: 129px;
 }
 .aglc_content{
@@ -541,11 +535,17 @@ footer{
         max-width: 32px;
         margin-right: 10px;
     }
+    nav.navbar .navbar-nav .nav-item {
+    padding-bottom: 10px;
+    }
+    .landing_menu_wrapper .nav_menu_wrpper {
+        margin-right: 0;
+    }
     .toggle_button{
         width: 26px;
     }
     .landing_menu_wrapper{
-        max-height: initial;
+       height:560px;
         padding-bottom: 40px;
     }
     .landing_menu_wrapper #navbarSupportedContent {
@@ -559,7 +559,8 @@ footer{
         margin-right: 0;
     }
     .puma_service_box{
-        margin-top: 50px;
+        margin-top: 30px;
+        width: 100%;
     }
     .service_header .left {
         font-size: 18px;
@@ -598,7 +599,7 @@ footer{
         text-align: center;
     }
     .about_wrapper {
-        padding-top: 600px;
+        padding-top: 60px;
         padding-bottom: 60px;
     }
     .about_wrapper .container {
@@ -625,8 +626,7 @@ footer{
     }
     .content_wrap p{
         font-size: 16px;
-        line-height: 26px;
-        text-align: center;
+        line-height: 24px;
         margin-bottom: 18px;
     }
     .white_box_wrapper {
@@ -660,7 +660,7 @@ footer{
         width: 35%;
     }
     .aglc_menu_wrap {
-        padding: 30px 0 20px 0;
+        padding: 10px 0 20px 0;
         align-items: center;
     }
     .milestones_wrapper {
@@ -687,7 +687,7 @@ footer{
     }
     .milestones_wrapper ul {
         justify-content: space-around;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
     .aboutraffle_wrapper {
         padding: 40px 0 40px 0;
@@ -786,13 +786,14 @@ footer{
         line-height: 40px;
     }
     .puma_service_box{
-        margin-top: 130px;
+        width: 100%;
+        margin-top: 140px;
     }
     .puma_wrap_content {
         max-width: 800px;
     }
     .about_wrapper {
-        padding-top: 580px;
+        padding-top: 180px;
         padding-bottom: 70px;
     }
     .media_wrap a img {
