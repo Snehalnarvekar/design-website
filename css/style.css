@@ -1021,7 +1021,16 @@ button.btn-disabled {
 	max-width: 181px;
     margin-right: 26px;
 }
-.filter_menu_wrap {
+.overlay{
+	position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+	overflow: hidden;
+}
+.filter_box_menu {
 	position: absolute;
     background-color: #FFFFFF;
     border: 1px solid #979797;
@@ -1030,11 +1039,135 @@ button.btn-disabled {
     right: 52%;
     padding: 40px 35px;
     z-index: 3;
-	
+	top: calc(100% + 20px);
 	display: none;
 }
-
-
+.filter_box_menu label.label {
+    color: #494949;
+    font-family: 'Lato',sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-align: left;
+    padding-bottom: 12px;
+}
+.filter_box_menu .radio_content {
+    color: #494949;
+    font-family: 'Lato',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+	text-align: left;
+	margin-bottom: 6px;
+    padding-left: 24px;
+}
+.radio_content {
+    display: block;
+    position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+}
+.radio_content .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #FFFFFF;
+	border: 1px solid #359BE0;
+	border-radius: 100%;
+	width: 16px;
+	height: 16px;
+  }
+  .radio_content .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  .radio_content input:checked ~ .checkmark:after {
+	display: block;
+  }
+  .radio_content .checkmark:after {
+	   top: 2px;
+	  left: 2px;
+	  width: 8px;
+	  height: 8px;
+	  border-radius: 50%;
+	  background: #359BE0;
+  }
+  .radio_content input:checked ~ .checkmark {
+	border:2px solid #359BE0;
+  }  
+.radio_content input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+  }
+.filter_box_menu .tab_wrapper,
+ .filter_box_menu .price_range_wrap {
+    padding-top: 20px;
+}
+.nav-tabs .nav-item {
+    color: #359BE0;
+    font-family: 'Lato',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+	border: 1px solid #dee2e6;
+	padding: 4px 15px;
+	border-radius: 0px;
+}
+.irs--flat .irs-line {
+    background-color: #E2E2E2;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+}
+.price_range_wrap label.label {
+    padding-bottom: 10px;
+}
+.checkbox_wrapper{
+	background-color: #FFFFFF;
+    border: 1px solid #E6E8ED;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 14px 15px 20px;
+}
+.filter_box_menu .checkbox_content {
+    color: #494949;
+    font-family: 'Lato',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+	text-align: left;
+	display: block;
+    margin-bottom: 16px;
+    padding-left: 24px;
+}
+.filter_box_menu ,.text_button {
+    padding-top: 20px;
+    text-align: right;
+}
+.checkbox_wrapper .checkbox_content input[type="checkbox"]:checked ~ .checkmark {
+    background-color: #0091FF;
+    border-radius: 2px;
+}
+.checkbox_wrapper .checkbox_content .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+	width: 16px;
+	background-color: #FFFFFF;
+	border: 1px solid #E6E8ED;
+	border-radius: 2px;
+}	
+.checkbox_wrapper .checkbox_content .checkmark:after {
+    left:5px; 
+    top: 1px; 
+    width: 5px;
+    height: 10px;
+}
 @media (max-width: 767px){
 	.homesection {
 		padding-bottom: 42px;
