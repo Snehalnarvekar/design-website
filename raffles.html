@@ -8,10 +8,12 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
         <link rel="stylesheet" href="css/style.css"> 
     </head>
 
     <body class="raffle_page">
+        <div class="overlay"></div>
         <div class="homesection raffle_header">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light ">
@@ -40,7 +42,7 @@
                 </nav>
             </div> 
         </div>
-        <div class="overlay"></div>
+       
         <div class="filter_wrapper"> 
             <div class="container">
                 <div class="inner_content">
@@ -52,13 +54,13 @@
                         </div>
                         <div class="right">
                             <span>
-                                <input type="text" id="filterbox" placeholder="Filters" readonly>
+                                <input type="text" id="filter" placeholder="Filters" readonly>
                                 <div class="filter_box_menu">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <label class="label">Sort by</label>
                                             <label class="radio_content">Date
-                                                <input type="radio" checked="checked" name="radio">
+                                                <input type="radio" name="radio">
                                                 <span class="checkmark"></span>
                                             </label>
                                             <label class="radio_content">Price
@@ -66,30 +68,22 @@
                                                 <span class="checkmark"></span>
                                             </label>
                                             <label class="radio_content">Provice
-                                                <input type="radio" checked="checked" name="radio">
+                                                <input type="radio"  name="radio">
                                                 <span class="checkmark"></span>
                                             </label>
                                             <label class="radio_content">Popularity
-                                                <input type="radio" checked="checked" name="radio">
+                                                <input type="radio"  name="radio">
                                                 <span class="checkmark"></span>
                                             </label>
                                             <div class="tab_wrapper">
                                                 <label class="label">Time</label>
                                                 <nav>
                                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                                      <a class="nav-item nav-link" id="this-week-tab" data-toggle="tab" href="#this-week" role="tab" aria-selected="true">This week</a>
-                                                      <a class="nav-item nav-link active" id="next-week-tab" data-toggle="tab" href="#next-week" role="tab" aria-selected="false">Next week</a>
-                                                      <a class="nav-item nav-link" id="next-month-tab" data-toggle="tab" href="#next-month" role="tab" aria-selected="false">Next month</a>
+                                                      <a class="nav-item nav-link" id="this_week_tab" data-toggle="tab" href="#this-week" role="tab" aria-selected="true">This week</a>
+                                                      <a class="nav-item nav-link active" id="next_week_tab" data-toggle="tab" href="#next-week" role="tab" aria-selected="false">Next week</a>
+                                                      <a class="nav-item nav-link" id="next_month_tab" data-toggle="tab" href="#next-month" role="tab" aria-selected="false">Next month</a>
                                                     </div>
                                                   </nav>
-                                                  <!-- <div class="tab-content">
-                                                    <div class="tab-pane fade show active" id="this-week" role="tabpanel" aria-labelledby="this-week-tab">
-                                                      This week</div>
-                                                    <div class="tab-pane fade" id="next-week" role="tabpanel" aria-labelledby="next-week-tab">
-                                                      Next week </div>
-                                                    <div class="tab-pane fade" id="next-month" role="tabpanel" aria-labelledby="next-month-tab">
-                                                      Next month </div>
-                                                  </div> -->
                                             </div>
                                             <div class="price_range_wrap">
                                                 <label  class="label">Raffle price range</label>
@@ -97,7 +91,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="label">Sort by</label>
+                                            <label class="label">Select province</label>
                                             <div class="checkbox_wrapper">
                                                 <label class="checkbox_content">Ohio
                                                     <input type="checkbox" checked="checked">
@@ -155,7 +149,7 @@
                                     </div>
                                 </div>
                                 <div class="card_body">
-                                    <h6 class="card-title">Spring season fundraising<i class="fas fa-chevron-right"></i>
+                                    <h6 class="card-title">Uranium cleaning fundraising<i class="fas fa-chevron-right"></i>
                                     </h6>
                                     <div class="card_footer">
                                         <p>Your support of Fall Lottery makes it possible to provide an exceptional standard of care for thousands…</p>
@@ -437,17 +431,9 @@
         <script src="js/owl.carousel.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="js/smooth-scroll.polyfills.min.js"></script>
-        <script>
-        $(document).ready(function(){    
-            $('#filterbox').on('click',function(){
-                $('.overlay').css('display','block');
-                $('.filter_box_menu').css('display','initial');
-            });
-            $('.overlay').on('click',function(){
-                $('.overlay').css('display','none');
-                $('.filter_box_menu').css('display','none');
-            });
-        });
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+        <script src="js/script.js"></script>
+    <script>    
         $("#slider").ionRangeSlider({
 			type: "double",
 			grid: false,
@@ -457,7 +443,7 @@
 			to: 2000,
 			prefix: "$"
 		});
-        </script>
+    </script>
    
     </body>
 </html>        

@@ -13,7 +13,7 @@ body {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
-*{
+*, label{
 	padding: 0;
 	margin: 0;
 }
@@ -945,7 +945,7 @@ button.btn-disabled {
     max-width: 257px;
 }
 .checkbox_content {
-	display: inline;
+	display: inline-block;
 	position: relative;
     padding-left:35px;
     cursor: pointer;
@@ -953,7 +953,7 @@ button.btn-disabled {
 }
 .checkbox_content .checkmark {
 	position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     height: 25px;
 	width: 25px;
@@ -1036,10 +1036,10 @@ button.btn-disabled {
     border: 1px solid #979797;
     border-radius: 12px;
     width: 709px;
-    right: 52%;
-    padding: 40px 35px;
+    right: 59%;
+    padding:30px 34px;
     z-index: 3;
-	top: calc(100% + 20px);
+	top: 130% ;
 	display: none;
 }
 .filter_box_menu label.label {
@@ -1078,31 +1078,31 @@ button.btn-disabled {
 	border-radius: 100%;
 	width: 16px;
 	height: 16px;
-  }
-  .radio_content .checkmark:after {
+}
+.radio_content .checkmark:after {
 	content: "";
 	position: absolute;
 	display: none;
-  }
-  .radio_content input:checked ~ .checkmark:after {
+}
+.radio_content input:checked ~ .checkmark:after {
 	display: block;
-  }
-  .radio_content .checkmark:after {
-	   top: 2px;
-	  left: 2px;
-	  width: 8px;
-	  height: 8px;
-	  border-radius: 50%;
-	  background: #359BE0;
-  }
-  .radio_content input:checked ~ .checkmark {
-	border:2px solid #359BE0;
-  }  
+}
+.radio_content .checkmark:after {
+	top: 2px;
+	left: 2px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #359BE0;
+}
+.radio_content input:checked ~ .checkmark {
+border:2px solid #359BE0;
+}  
 .radio_content input {
 	position: absolute;
 	opacity: 0;
 	cursor: pointer;
-  }
+}
 .filter_box_menu .tab_wrapper,
  .filter_box_menu .price_range_wrap {
     padding-top: 20px;
@@ -1110,18 +1110,61 @@ button.btn-disabled {
 .nav-tabs .nav-item {
     color: #359BE0;
     font-family: 'Lato',sans-serif;
-    font-size: 14px;
+	font-size: 14px;
+	line-height: 25px;
     font-weight: 400;
     text-align: center;
-	border: 1px solid #dee2e6;
-	padding: 4px 15px;
-	border-radius: 0px;
+	border: 1px solid #E6E8ED;
+	padding: 4px 14px;
+	border-radius: 0;
+}
+.nav-tabs .nav-item.active {
+	background-color:#359BE0 ;
+	color: #FFFFFF;
+	border: 1px solid #E6E8ED;
+	padding: 4px 14px;
+	border-left: 0;
+	border-right: 0;
+}
+.nav-tabs {
+    border-bottom: none;
 }
 .irs--flat .irs-line {
     background-color: #E2E2E2;
     border-radius: 2px;
     width: 100%;
     height: 4px;
+}
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+    color: #359BE0;
+    font-family: 'Lato',sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+	text-align: center;
+	background-color: transparent;
+    border-radius: 4px;
+}
+.irs--flat .irs-bar {
+	background-color: #359BE0;
+	height: 4px;
+}
+.irs--flat .irs-handle>i:first-child {
+    background-color: #FFFFFF;
+    border: 1px solid #E6E8ED;
+    border-radius: 100%;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+    width: 14px;
+    height: 14px;
+	cursor: pointer;
+	left: 0;
+    top: -2px;
+}
+.irs--flat .irs-from:before, 
+.irs--flat .irs-to:before, 
+.irs--flat .irs-single:before, 
+.irs--flat .irs-min, .irs--flat .irs-max {
+    display: none;
 }
 .price_range_wrap label.label {
     padding-bottom: 10px;
@@ -1141,12 +1184,15 @@ button.btn-disabled {
     line-height: 16.8px;
 	text-align: left;
 	display: block;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     padding-left: 24px;
 }
-.filter_box_menu ,.text_button {
+.filter_box_menu .text_button {
     padding-top: 20px;
     text-align: right;
+}
+.filter_box_menu .text_button a.btn-positive {
+	padding: 7px 38px;
 }
 .checkbox_wrapper .checkbox_content input[type="checkbox"]:checked ~ .checkmark {
     background-color: #0091FF;
@@ -1168,6 +1214,23 @@ button.btn-disabled {
     width: 5px;
     height: 10px;
 }
+.filter_box_menu::after {
+    content: "";
+    position: absolute;
+    top: -13px;
+    right: 40px;
+    border-top: 15px solid #FFFFFF;
+    border-right: 15px solid #FFFFFF;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    transform: rotate(-45deg);
+    z-index: 2;
+}
+.filter_wrapper{
+	width: 100%;
+	float: left;
+}
+
 @media (max-width: 767px){
 	.homesection {
 		padding-bottom: 42px;
@@ -1680,6 +1743,7 @@ button.btn-disabled {
 	}
 	label.checkbox_content {
 		margin-top: 16px;
+		margin-bottom: 0;
 	}
 	.filter_wrapper .right {
 		padding-top: 15px;
@@ -1688,7 +1752,7 @@ button.btn-disabled {
 		font-size: 16px;
 		line-height: 24px;
 	}
-	.filter_wrapper form .left, .filter_wrapper .right {
+	.filter_wrapper form .left, .filter_wrapper .form .right {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -1712,7 +1776,7 @@ button.btn-disabled {
 		margin-bottom: 10px;
 	}
 	.card_footer {
-		padding: 10px 12px;
+		padding: 15px 12px;
 	}
 	.card_footer p {
 		font-size: 14px;
@@ -1728,7 +1792,30 @@ button.btn-disabled {
 	.pagination_wrapper li.page-item.page {
 		width: 50px;
 	}
-	
+	.filter_box_menu {
+		width: 100%;
+		right: 0%;
+		display: none;
+		padding: 20px;
+		z-index: 3;
+		top: 80%;
+	}
+	.filter_box_menu .tab_wrapper, 
+	.filter_box_menu .price_range_wrap {
+		padding-top: 10px;
+	}
+	.filter_box_menu .checkbox_content {
+		margin-top: 0;
+	}	
+	.checkbox_wrapper {
+		padding: 10px;
+	}
+	.nav-tabs .nav-item {
+		font-size: 12px;
+		line-height: 20px;
+		padding: 4px 5px;
+	}
+
 }	
 @media(min-width: 768px) and (max-width: 1024px){
 	.homesection {
@@ -2070,10 +2157,10 @@ button.btn-disabled {
 		padding-bottom: 20px;
 	}
 	.filter_wrapper .left label {
-		margin-right: 14px;
+		margin-right: 16px;
 	}
 	.filter_wrapper label {
-		font-size: 17px;
+		font-size: 18px;
 		line-height: 27px;
 	}
 	.filter_wrapper form {
@@ -2087,7 +2174,7 @@ button.btn-disabled {
 		padding: 13px 15px;
 	}
 	.filter_wrapper .left input {
-		margin-right: 18px;
+		margin-right: 0;
 		max-width: 64%;
 	}
 	.filter_wrapper .right input[type="text"] {
@@ -2095,7 +2182,7 @@ button.btn-disabled {
 		margin-right: 20px;
 	}
 	.filter_wrapper form .left {
-		width: 45%;
+		width: 48%;
 		margin-right: 35px;
 	}
 	.filter_wrapper form .right {
@@ -2123,6 +2210,10 @@ button.btn-disabled {
 	}
 	.pagination_wrapper {
 		padding: 56px 0 70px 0;
+	}
+	.filter_box_menu {
+		width: 140%;
+		right: 64%;
 	}
 
 }
@@ -2197,8 +2288,18 @@ button.btn-disabled {
 		width: 100%;
 	}
 	.card-columns {
-		column-count: 2;
-		
+		column-count: 2;	
+	}
+	.filter_wrapper form .left {
+		margin-right: 20px;
+	}
+	.card-columns{
+		column-gap: 0;
+	}
+	.raffle_section .card_wrapper .card {
+		margin-right: 10px;
+		margin-left: 20px;
+		margin-bottom: 20px;
 	}
 	
 }	
