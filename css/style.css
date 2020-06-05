@@ -940,10 +940,6 @@ button.btn-disabled {
 .filter_wrapper .left label {
     margin-right: 24px;
 }
-.filter_wrapper .left input {
-    margin-right: 28px;
-    max-width: 257px;
-}
 .checkbox_content {
 	display: inline-block;
 	position: relative;
@@ -1020,6 +1016,10 @@ button.btn-disabled {
 .filter_wrapper .right input[type="text"] {
 	max-width: 181px;
     margin-right: 23px;
+}
+.filter_wrapper .left input{
+	max-width: 257px;
+	margin-right: 28px;
 }
 .overlay{
 	position: fixed;
@@ -1252,11 +1252,8 @@ border:2px solid #359BE0;
 	max-width: 100%;
 	background-color: #FFEBBA;
 }
-.header .filter_wrapper form .left{
-	width: 54%;
-}
 .header .filter_wrapper .left input {
-	width: 400px;
+	max-width: 400px;
 }
 .raffle_header.header-2 {
 	background-image: url(../svg/header-rightcurve.svg);
@@ -1269,12 +1266,15 @@ border:2px solid #359BE0;
     background: #242424;
     height: 250px;
 }
+.header-2 .filter_wrapper .inner_content {
+    padding: 75px 0 57px 0;
+}
 .header .filter_wrapper form .left,
 .header-2 .filter_wrapper form .left {
     border-right: 1px solid #FFD46A;
 }
 .raffle_header.header-2{
-	margin-bottom: 350px;
+	margin-bottom: 100px;
 }
 .header-2 .filter_wrapper .inner_content{
     background-image: url('../images/black_ticket.svg');
@@ -1795,7 +1795,8 @@ border:2px solid #359BE0;
 		width: 100%;
 		padding: 12px 15px;
 	}
-	.filter_wrapper .left input,.filter_wrapper .right input[type="text"] {
+	.filter_wrapper .left input,
+	.filter_wrapper .right input[type="text"] {
 		max-width: 100%;
 		margin-right: 0 !important;
 	}
@@ -1880,27 +1881,25 @@ border:2px solid #359BE0;
 		width: 100%;
 	}
 	.header .filter_wrapper .inner_content {
-		padding: 26px 0 30px 0;
+		padding: 20px 0 30px 0;
 	}
 	.header .filter_wrapper h2 {
 		text-align: center;
 	}
 	.raffle_page .homesection.header {
-		padding-bottom: 320px;
+		padding-bottom: 250px;
 	}
 	.raffle_header.header {
-		margin-bottom: 30px;
+		margin-bottom: 100px;
 	}
 	.header .filter_wrapper .left input {
 		max-width: 100%;
 	}
-	.header .filter_wrapper form .left, .header-2 .filter_wrapper form .left {
+	.header .filter_wrapper form .left, 
+	.header-2 .filter_wrapper form .left {
 		border-right: none;
 	}
-	.header-2 .filter_wrapper h2 {
-		text-align: center;
 
-	}
 }	
 @media(min-width: 768px) and (max-width: 1024px){
 	.homesection {
@@ -2231,7 +2230,7 @@ border:2px solid #359BE0;
 		padding: 60px 0 60px 0;
 	}
 	.raffle_header nav.navbar {
-		padding: 18px 0 18px 0;
+		padding: 20px 0 30px 0;
 	}
 	.filter_wrapper .inner_content {
 		padding: 30px 0 50px 0;
@@ -2259,6 +2258,7 @@ border:2px solid #359BE0;
 		padding: 13px 15px;
 	}
 	.filter_wrapper .left input {
+		max-width: 68%;
 		margin-right: 0;
 	}
 	.filter_wrapper .right input[type="text"] {
@@ -2266,11 +2266,8 @@ border:2px solid #359BE0;
 		margin-right: 10px;
 	}
 	.filter_wrapper form .left {
-		width: 48%;
-		margin-right: 30px;
-	}
-	.filter_wrapper form .right {
 		width: 50%;
+		margin-right: 30px;
 	}
 	.raffle_section h4 {
 		font-size: 20px;
@@ -2303,24 +2300,21 @@ border:2px solid #359BE0;
 		margin-bottom: 45px;
 	}
 	.raffle_page .homesection.header {
-		padding-bottom: 220px;
+		padding-bottom: 24%;
 	}
 	.header .filter_wrapper .left input {
 		max-width: 66%;
 	}
-	.header-2 .filter_wrapper .inner_content {
-		margin-top: 50px;
+	.header.header-2 .filter_wrapper .inner_content {
+		padding: 87px 0 57px 0;
 	}
-	.header-2 .filter_wrapper {
-		height: 300px;
+	.raffle_page .homesection.header.header-2 {
+		padding-bottom: 20%;
 	}
-	.raffle_header.header-2{
-		margin-bottom: 380px;
+	.raffle_header.header-2 {
+		margin-bottom: 150px;
 	}
-	.header-2 .filter_wrapper .inner_content {
-		padding: 105px 0 50px 0;
-	}
-
+	
 }
 
 @media (max-width: 440px){
@@ -2408,7 +2402,7 @@ border:2px solid #359BE0;
 	}
 	.filter_wrapper .left input {
 		margin-right: 10px;
-		width: 220px;
+		
 	}
 	.header .filter_wrapper form .left {
 		width: 48%;
