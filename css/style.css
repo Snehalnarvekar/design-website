@@ -727,7 +727,7 @@ footer .social-media li.text_button {
 	padding-bottom: 0;
 }
 .raffle_header nav.navbar {
-    padding: 36px 0 36px 0;
+    padding: 36px 0 35px 0;
     margin-bottom: 0; 
 }
 .raffle_page {
@@ -941,7 +941,7 @@ button.btn-disabled {
     margin-right: 24px;
 }
 .filter_wrapper .left input {
-    margin-right: 30px;
+    margin-right: 28px;
     max-width: 257px;
 }
 .checkbox_content {
@@ -1019,7 +1019,7 @@ button.btn-disabled {
 }
 .filter_wrapper .right input[type="text"] {
 	max-width: 181px;
-    margin-right: 26px;
+    margin-right: 23px;
 }
 .overlay{
 	position: fixed;
@@ -1230,6 +1230,67 @@ border:2px solid #359BE0;
 	width: 100%;
 	float: left;
 }
+.raffle_header.header{
+	background-image: url(../svg/header-rightcurve.svg), url(../svg/header-leftcurve.svg);
+	background-position: 95% 0, 104% 0;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 43%, 17%;
+    border-bottom: 1px solid #F6DB99;
+	margin-bottom: 97px;
+}
+.raffle_page .homesection.header {
+	padding-bottom: 264px;
+}	
+.header .filter_wrapper .inner_content {
+    padding: 0 0 57px 0;
+}
+.header .filter_wrapper h2 {
+	padding-bottom: 17px;
+	text-align: left;
+}
+.header .filter_wrapper form{
+	max-width: 100%;
+	background-color: #FFEBBA;
+}
+.header .filter_wrapper form .left{
+	width: 54%;
+}
+.header .filter_wrapper .left input {
+	width: 400px;
+}
+.raffle_header.header-2 {
+	background-image: url(../svg/header-rightcurve.svg);
+	background-position: 101% 0;
+	background-repeat: no-repeat;
+	background-size: 34%;
+	border-bottom: 0;
+}
+.header-2 .filter_wrapper {
+    background: #242424;
+    height: 250px;
+}
+.header .filter_wrapper form .left,
+.header-2 .filter_wrapper form .left {
+    border-right: 1px solid #FFD46A;
+}
+.raffle_header.header-2{
+	margin-bottom: 350px;
+}
+.header-2 .filter_wrapper .inner_content{
+    background-image: url('../images/black_ticket.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    margin-top: 30px;
+}
+.header-2 .filter_wrapper h2 {
+	color: #FFFFFF;
+	text-align: left;
+}
+.header-2 .filter_wrapper form {
+    background-color: #FFEBBA;
+    max-width: 100%;
+}
+
 
 @media (max-width: 767px){
 	.homesection {
@@ -1815,7 +1876,31 @@ border:2px solid #359BE0;
 		line-height: 20px;
 		padding: 4px 5px;
 	}
+	.header .filter_wrapper form .left {
+		width: 100%;
+	}
+	.header .filter_wrapper .inner_content {
+		padding: 26px 0 30px 0;
+	}
+	.header .filter_wrapper h2 {
+		text-align: center;
+	}
+	.raffle_page .homesection.header {
+		padding-bottom: 320px;
+	}
+	.raffle_header.header {
+		margin-bottom: 30px;
+	}
+	.header .filter_wrapper .left input {
+		max-width: 100%;
+	}
+	.header .filter_wrapper form .left, .header-2 .filter_wrapper form .left {
+		border-right: none;
+	}
+	.header-2 .filter_wrapper h2 {
+		text-align: center;
 
+	}
 }	
 @media(min-width: 768px) and (max-width: 1024px){
 	.homesection {
@@ -2175,15 +2260,14 @@ border:2px solid #359BE0;
 	}
 	.filter_wrapper .left input {
 		margin-right: 0;
-		max-width: 64%;
 	}
 	.filter_wrapper .right input[type="text"] {
-		max-width: 135px;
-		margin-right: 20px;
+		max-width: 130px;
+		margin-right: 10px;
 	}
 	.filter_wrapper form .left {
 		width: 48%;
-		margin-right: 35px;
+		margin-right: 30px;
 	}
 	.filter_wrapper form .right {
 		width: 50%;
@@ -2214,6 +2298,27 @@ border:2px solid #359BE0;
 	.filter_box_menu {
 		width: 140%;
 		right: 64%;
+	}
+	.raffle_header.header{
+		margin-bottom: 45px;
+	}
+	.raffle_page .homesection.header {
+		padding-bottom: 220px;
+	}
+	.header .filter_wrapper .left input {
+		max-width: 66%;
+	}
+	.header-2 .filter_wrapper .inner_content {
+		margin-top: 50px;
+	}
+	.header-2 .filter_wrapper {
+		height: 300px;
+	}
+	.raffle_header.header-2{
+		margin-bottom: 380px;
+	}
+	.header-2 .filter_wrapper .inner_content {
+		padding: 105px 0 50px 0;
 	}
 
 }
@@ -2291,7 +2396,7 @@ border:2px solid #359BE0;
 		column-count: 2;	
 	}
 	.filter_wrapper form .left {
-		margin-right: 20px;
+		margin-right: 10px;
 	}
 	.card-columns{
 		column-gap: 0;
@@ -2301,6 +2406,12 @@ border:2px solid #359BE0;
 		margin-left: 20px;
 		margin-bottom: 20px;
 	}
-	
+	.filter_wrapper .left input {
+		margin-right: 10px;
+		width: 220px;
+	}
+	.header .filter_wrapper form .left {
+		width: 48%;
+	}
 }	
 
