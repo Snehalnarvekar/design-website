@@ -727,7 +727,7 @@ footer .social-media li.text_button {
 	padding-bottom: 0;
 }
 .raffle_header nav.navbar {
-    padding: 36px 0 35px 0;
+    padding: 36px 0 32px 0;
     margin-bottom: 0; 
 }
 .raffle_page {
@@ -922,7 +922,7 @@ button.btn-disabled {
 	max-width: 962px;
 	background-color: #F6F4EF;
     border-radius: 10px;
-    padding: 26px 30px;
+    padding: 26px 30px 24px;
 	margin: 0 auto;
 	display:flex;
 }
@@ -996,7 +996,7 @@ button.btn-disabled {
 	background-color: #FFFFFF;
     border-radius: 6px;
     border: none;
-    padding: 18px 15px;
+    padding: 15px 15px;
     outline: none;
     box-shadow: none;
 }
@@ -1046,7 +1046,7 @@ button.btn-disabled {
     color: #494949;
     font-family: 'Lato',sans-serif;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 16.8px;
     text-align: left;
     padding-bottom: 12px;
@@ -1240,9 +1240,15 @@ border:2px solid #359BE0;
 }
 .raffle_page .homesection.header {
 	padding-bottom: 264px;
+}
+.homesection.header .container{
+	max-width: calc( 1140px + 30px);
 }	
 .header .filter_wrapper .inner_content {
     padding: 0 0 57px 0;
+}
+ .text_button a.btn-positive {
+	padding: 6px 20px;
 }
 .header .filter_wrapper h2 {
 	padding-bottom: 17px;
@@ -1285,6 +1291,7 @@ border:2px solid #359BE0;
 .header-2 .filter_wrapper h2 {
 	color: #FFFFFF;
 	text-align: left;
+	font-weight: 400;
 }
 .header-2 .filter_wrapper form {
     background-color: #FFEBBA;
